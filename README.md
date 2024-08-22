@@ -9,8 +9,8 @@
 - Eduardo: https://github.com/Eduardo-Peruzzo/react-base-project
 - Pedro: https://github.com/Pedroselecto/react-base-project
 - Mateus: https://github.com/MateusSachinho/react-base-project
-- Arthur: https://github.com/EstevaoMO/react-base-project
-- Estevão: https://github.com/arthur5040/react-base-project
+- Arthur: https://github.com/arthur5040/react-base-project
+- Estevão: https://github.com/EstevaoMO/react-base-project
 
 # Propósito do sistema:
 
