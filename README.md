@@ -36,7 +36,8 @@ Utilizando essa ferramenta para planejar o projeto dos portfólios do IBMEC, as 
 
 # Requisitos do sistema
 ## Requisitos funcionais:
-- ex1
+- ex1  Mostrar uma descrição, imagens e alunos presentes em cada projeto.
+- ex2  
 
 ## Requisitos não-funcionais:
 - ex1
