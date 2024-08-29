@@ -20,7 +20,7 @@ A metodologia 5W2H é uma ferramenta de gestão usada para definir os direcionam
 - **What (o quê?)**: Descrição geral do que será o projeto em questão, sendo um resumo simples.
 - **Why (por quê?)**: Motivos pelos quais o projeto será feito, qual é o seu propósito.
 - **Where (onde?)**: Locais em que a ação será feita, podendo ser uma localização real ou um ambiente virtual.
-- **When (quando?)**: Em que momento o projeto será executado, e quais serão os prazos.
+- **When (quando?)**: Em que momento o projeto será executado, e quais serão os prazos, além de quando poderá ser utilizado pelos usuários.
 - **Who (quem?)**: Quem serão os responsáveis pela execução do projeto.
 - **How (como?)**: Detalhamento de como será feito o projeto, quais serão os métodos utilizados.
 - **How much (quanto?)**: Qual o custo do projeto, podendo ser definido de diversas formas, como financeiramente (custo em dinheiro) ou em horas trabalhadas, por exemplo.
