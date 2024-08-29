@@ -17,12 +17,12 @@ O propósito de um sistema é o motivo pelo qual tal sistema existe, e está mui
 
 # 5W2H
 A metodologia 5W2H é uma ferramenta de gestão usada para definir os direcionamentos e objetivos de um plano ou projeto. Ela consiste basicamente de 7 perguntas simples que devem ser respondidas na fase inicial do projeto. As perguntas são:
-- **What (o quê?)**: Descrição geral do que será o projeto em questão, sendo um resumo simples.
-- **Why (por quê?)**: Motivos pelos quais o projeto será feito, qual é o seu propósito.
+- **What (o quê?)**: Descrição geral do que será o sistema em questão, sendo um resumo simples.
+- **Why (por quê?)**: Motivos pelos quais o sistema será feito, qual é o seu propósito.
 - **Where (onde?)**: Locais em que a ação será feita, podendo ser uma localização real ou um ambiente virtual.
-- **When (quando?)**: Em que momento o projeto será executado, e quais serão os prazos, além de quando poderá ser utilizado pelos usuários.
-- **Who (quem?)**: Quem serão os responsáveis pela execução do projeto.
-- **How (como?)**: Detalhamento de como será feito o projeto, quais serão os métodos utilizados.
+- **When (quando?)**: Em que momento o sistema será executado, e quais serão os prazos, além de quando poderá ser utilizado pelos usuários.
+- **Who (quem?)**: Quem serão os responsáveis pela execução do projeto, e quem vai o utilizar.
+- **How (como?)**: Detalhamento de como será feito o sistema, quais serão os métodos utilizados.
 - **How much (quanto?)**: Qual o custo do projeto, podendo ser definido de diversas formas, como financeiramente (custo em dinheiro) ou em horas trabalhadas, por exemplo.
 
 Utilizando essa ferramenta para planejar o projeto dos portfólios do IBMEC, as perguntas podem ser respondidas da seguinte maneira:
@@ -30,6 +30,13 @@ Utilizando essa ferramenta para planejar o projeto dos portfólios do IBMEC, as 
 - **Why (por quê?)**: Criar um ambiente onde seja possível exibir os projetos criados no IBMEC para o resto do mundo, de maneira atrativa e inovadora.
 - **Where (onde?)**: Uma página online.
 - **When (quando?)**: No final do período (2024.2) o projeto será terminado e pode ser utilizado quando empresas forem buscar projetos feitos pelos alunos da IBMEC.
-- **Who (quem?)**: Alunos da turma de Projeto Front-End.
+- **Who (quem?)**: Alunos da turma de Projeto Front-End irão criar o sistema, para que os alunos do IBMEC o utilizem, bem como outras empresas para acessar o sistema.
 - **How (como?)**: Utilizando conhecimentos sobre as linguagens usadas para a criação de sites na internet e sobre design gráfico.
 - **How much (quanto?)**: Alguns meses de trabalho.
+
+# Requisitos do sistema
+## Requisitos funcionais:
+- ex1
+
+## Requisitos não-funcionais:
+- ex1
