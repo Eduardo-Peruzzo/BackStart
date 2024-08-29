@@ -16,7 +16,7 @@
 O propósito de um sistema é o motivo pelo qual tal sistema existe, e está muito relacionado ao  _Why_ (Por Quê) da metodologia 5W2H. O propósito do sistema de portfólios do IBMEC é exibir os projetos realizados pelos alunos da faculdade, mostrando brevemente do que se trata cada projeto e quem o fez.
 
 # 5W2H
-A metodologia 5W2H é uma ferramenta de gestão usada para definir os direcionamentos e objetivos de um plano ou projeto. Ela consiste basicamente de 7 perguntas simples que devem ser respondidas na fase inicial do projeto. As perguntas sãp:
+A metodologia 5W2H é uma ferramenta de gestão usada para definir os direcionamentos e objetivos de um plano ou projeto. Ela consiste basicamente de 7 perguntas simples que devem ser respondidas na fase inicial do projeto. As perguntas são:
 - What (o quê?): Descrição geral do que será o projeto em questão, sendo um resumo simples.
 - Why (por quê?): Motivos pelos quais o projeto será feito, qual é o seu propósito.
 - Where (onde?): Locais em que a ação será feita, podendo ser uma localização real ou um ambiente virtual.
