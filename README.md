@@ -42,4 +42,19 @@ Utilizando essa ferramenta para planejar o projeto dos portfólios do IBMEC, as 
   
 
 ## Requisitos não-funcionais:
-- ex1
+- O sistema deve ser seguro para que não haja plágio.
+- O sistema deve ficar disponível o maior tempo possível.
+- O sistema deve ser capaz de carregar imagens de forma rápida e eficaz.
+- O sistema deve ter a identidade visual da IBMEC.
+- O sistema deve ser intuitivo e fácil de navegar.
+- O sistema deve ter teclas de atalho associadas aos comandos. 
+
+
+
+
+
+
+
+
+
+
