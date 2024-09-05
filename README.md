@@ -47,7 +47,8 @@ Utilizando essa ferramenta para planejar o sistema dos portfólios do IBMEC, as 
 - O sistema deve ser capaz de carregar imagens de forma rápida e eficaz.
 - O sistema deve ter a identidade visual da IBMEC.
 - O sistema deve ser intuitivo e fácil de navegar.
-- O sistema deve ter teclas de atalho associadas aos comandos. 
+- O sistema deve ter teclas de atalho associadas aos comandos.
+- O sistema deve operar com o auxílio de um servidor.
 
 
 
