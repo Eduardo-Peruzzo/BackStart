@@ -34,6 +34,7 @@ Utilizando essa ferramenta para planejar o sistema dos portfólios do IBMEC, as 
 
 # Requisitos do sistema
 ## Requisitos funcionais:
+Os requisitos funcionais descrevem as funcionalidades específicas que um sistema deve ter. Eles definem as ações que o sistema deve ser capaz de realizar e as interações que deve suportar.
 - O sistema deverá mostrar os projetos de vários alunos para que o cliente possa explorar os projetos;
 - O sistema deverá mostrar uma descrição do projeto, imagens, alunos participantes, tecnologias utilizadas e o início-fim do projeto;
 - O sistema deverá possuir um filtro de nome/curso para facilitar a pesquisa sobre projetos específicos;
@@ -41,6 +42,7 @@ Utilizando essa ferramenta para planejar o sistema dos portfólios do IBMEC, as 
 - O sistema deverá possibilitar que alunos cadastrem novos projetos;
 
 ## Requisitos não-funcionais:
+Os requisitos não-funcionais descrevem as qualidades ou atributos do sistema, como o desempenho do próprio
 - O sistema deverá ter a identidade visual da IBMEC;
 - O sistema deverá possuir as opções de língua inglesa e portuguesa;
 - O sistema deverá ser feito em React;
