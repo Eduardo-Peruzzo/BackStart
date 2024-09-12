@@ -34,21 +34,14 @@ Utilizando essa ferramenta para planejar o sistema dos portfólios do IBMEC, as 
 
 # Requisitos do sistema
 ## Requisitos funcionais:
-- O sistema deve mostrar os projetos de vários alunos para que o cliente possa explorar os projetos;
-- O sistema deve mostrar uma descrição do projeto, imagens, alunos participantes, tecnologias utilizadas e o início-fim do projeto;
-- O sistema deve possuir um filtro de nome/curso para facilitar a pesquisa sobre projetos específicos;
-- O sistema deve possuir uma opção de carregar mais projetos quando o usuário chegar ao fim da página;
+- O sistema deverá mostrar os projetos de vários alunos para que o cliente possa explorar os projetos;
+- O sistema deverá mostrar uma descrição do projeto, imagens, alunos participantes, tecnologias utilizadas e o início-fim do projeto;
+- O sistema deverá possuir um filtro de nome/curso para facilitar a pesquisa sobre projetos específicos;
+- O sistema deverá possuir uma opção de carregar mais projetos quando o usuário chegar ao fim da página;
 - O sistema deverá possibilitar que alunos cadastrem novos projetos;
-  
 
 ## Requisitos não-funcionais:
-- O sistema deve ser seguro para que não haja plágio;
-- O sistema deve ficar disponível o maior tempo possível;
-- O sistema deve ser capaz de carregar imagens de forma rápida e eficaz;
-- O sistema deve ter a identidade visual da IBMEC;
-- O sistema deve ser intuitivo e fácil de navegar;
-- O sistema deve ter teclas de atalho associadas aos comandos;
-- O sistema deve operar com o auxílio de um servidor;
-- O sistema deve possuir as opções de língua inglesa e portuguesa;
-- O sistema deve ser feito em React;
-- O sistema deverá possuir porte para celulares e computadores;
+- O sistema deverá ter a identidade visual da IBMEC;
+- O sistema deverá possuir as opções de língua inglesa e portuguesa;
+- O sistema deverá ser feito em React;
+- O sistema deverá poder ser utilizado em celulares e computadores;
