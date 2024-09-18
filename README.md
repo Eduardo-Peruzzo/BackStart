@@ -39,15 +39,21 @@ Os requisitos funcionais descrevem as funcionalidades específicas que um sistem
   - O portfólio será mostrado em diversas páginas (como o google);
   - O estilo fica a critério do desenvolvedor.
 - O sistema deverá mostrar uma descrição do projeto, imagens, alunos participantes, tecnologias utilizadas e o início-fim do projeto;
+  - O Administrador será capaz de editar, criar ou fazer a deleção lógica dos projetos.
 - O sistema deverá possuir um filtro de nome/curso para facilitar a pesquisa sobre projetos específicos;
-- O sistema deverá possuir uma opção de carregar (próxima página) mais projetos quando o usuário chegar ao fim da página:
+  - Haverão opções de filtragem:
+    - Tecnologias utilizadas
+    - Ferramentas utilizadas
+    - Unidade do IBMEC
+  - Haverá também uma área para pesquisa escrita.
+- O sistema deverá possuir uma opção de carregar mais (próxima página) projetos quando o usuário chegar ao fim da página:
   - Ao carregar mais projetos o sistema levará o usuário para a próxima página, ou o usuário poderá escolher uma página diretamente.
 - O sistema deverá possibilitar que alunos cadastrem novos projetos:
   - Os alunos devem recorrer ao Administrador para cadastrar novos projetos.
 - O sistema deve possuir um endereço separado para que o administrador possa fazer login, além disso, deve deve ter um botão de logout exclusivo para o mesmo;
-- O sistema deve ter um meio para retornar ao site da Ibmec;
+- O sistema deve ter um meio para retornar ao site da IBMEC;
 - O sistema deve ter um link de "home" para voltar à página principal;
-- O sistema deve possuir um link "sobre nós" em cada projeto que diz respeito sobre seus desenvolvedores, e também deve haver um "sobre nós" para os desenvolvedores do próprio sistema;
+- O sistema deve possuir um link "sobre nós" em cada projeto que diz respeito aos seus desenvolvedores, e também deve haver um "sobre nós" para os desenvolvedores do próprio sistema;
 
 ## Requisitos não-funcionais:
 Os requisitos não-funcionais descrevem as qualidades ou atributos do sistema, como o desempenho do próprio
@@ -56,4 +62,4 @@ Os requisitos não-funcionais descrevem as qualidades ou atributos do sistema, c
 - O sistema deverá ser feito em React;
 - O sistema deverá poder ser utilizado em celulares e computadores;
 - O sistema deve fazer com que o botão de voltar do navegador volte para a mesma página da listagem que estava antes, ao invés de voltar para a página 1;
-- O sistema deve exibir os projetos em ordem cronológica na página principal;
+- O sistema deve exibir os projetos em ordem cronológica (do mais novo até o mais antigo) na página principal;
