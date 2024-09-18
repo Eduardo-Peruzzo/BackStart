@@ -11,7 +11,7 @@
   - Pelo menos uma imagem
   - Descrição do projeto, tecnologias utilizadas, documentos, tabelas, etc
   - Integrantes do grupo que criou o projeto e suas afiliações (aluno, professor, etc)
-  - Data de início do projeto
+  - Data de início e fim, caso tenha, do projeto
 
 ## Pós-condições:
 - Após o fluxo principal, o sistema estará na tela da descrição do projeto para que o usuário possa explorar
