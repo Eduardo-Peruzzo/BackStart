@@ -41,7 +41,7 @@ Os requisitos funcionais descrevem as funcionalidades específicas que um sistem
 - O sistema deverá mostrar uma descrição do projeto, imagens, alunos participantes, tecnologias utilizadas e o início-fim do projeto;
   - O Administrador será capaz de editar, criar ou fazer a deleção lógica dos projetos.
 - O sistema deverá possuir um filtro de nome/curso para facilitar a pesquisa sobre projetos específicos;
-  - Haverão opções de filtragem:
+  - Haverá opções de filtragem:
     - Tecnologias utilizadas
     - Ferramentas utilizadas
     - Unidade do IBMEC
