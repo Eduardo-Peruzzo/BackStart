@@ -11,3 +11,5 @@
 
 ## Pós-condições:
 - Após o fluxo principal, O sistema exibirá uma página padrão para visitantes não autenticados.
+
+(rever pag inicial de log in e out (definir melhor))
