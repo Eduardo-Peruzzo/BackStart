@@ -58,6 +58,7 @@ Os requisitos funcionais descrevem as funcionalidades específicas que um sistem
 ## Requisitos não-funcionais:
 Os requisitos não-funcionais descrevem as qualidades ou atributos do sistema, como o desempenho do próprio
 - O sistema deverá ter a identidade visual da IBMEC;
+  - O manual de marca do IBMEC deve ser utilizado.
 - O sistema deverá possuir as opções de língua inglesa e portuguesa;
 - O sistema deverá ser feito em React;
 - O sistema deverá poder ser utilizado em celulares e computadores;

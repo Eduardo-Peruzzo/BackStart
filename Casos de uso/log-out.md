@@ -1,7 +1,7 @@
 # Log out
 
 ## Atores:
-- Usuário do site.
+- Administrador.
 
 ## Pré-condições:
 - O usuário deve estar logado no sistema.

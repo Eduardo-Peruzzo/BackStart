@@ -1,7 +1,7 @@
 # Desativar um projeto - deleção lógica
 
 ## Atores:
-- Administrador
+- Administrador.
 
 ## Pré-condições:
 - O administrador deve estar logado e um projeto selecionado.
