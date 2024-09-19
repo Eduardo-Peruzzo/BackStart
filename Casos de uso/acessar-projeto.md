@@ -1,4 +1,4 @@
-# Mostrar detalhes de um projeto
+# Acessar projeto
 
 ## Atores:
 - Usuário do site.
