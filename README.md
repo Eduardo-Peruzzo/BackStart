@@ -40,12 +40,17 @@ Os requisitos funcionais descrevem as funcionalidades específicas que um sistem
   - O estilo fica a critério do desenvolvedor.
 - O sistema deverá mostrar uma descrição do projeto, imagens, alunos participantes, tecnologias utilizadas e o início-fim do projeto;
   - O Administrador será capaz de editar, criar ou fazer a deleção lógica dos projetos.
+  - Cada projeto terá:
+    - Pelo menos uma imagem
+    - Descrição do projeto
+    - Data de início e fim, caso haja
+    - Integrantes do grupo que criou o projeto
 - O sistema deverá possuir um filtro de nome/curso para facilitar a pesquisa sobre projetos específicos;
-  - Haverá opções de filtragem:
+  - A página principal terá as opções de filtragem:
     - Tecnologias utilizadas
     - Ferramentas utilizadas
     - Unidade do IBMEC
-  - Haverá também uma área para pesquisa escrita.
+  - A página principal terá uma área para pesquisa escrita.
 - O sistema deverá possuir uma opção de carregar mais (próxima página) projetos quando o usuário chegar ao fim da página:
   - Ao carregar mais projetos o sistema levará o usuário para a próxima página, ou o usuário poderá escolher uma página diretamente.
 - O sistema deverá possibilitar que alunos cadastrem novos projetos:
@@ -64,3 +69,17 @@ Os requisitos não-funcionais descrevem as qualidades ou atributos do sistema, c
 - O sistema deverá poder ser utilizado em celulares e computadores;
 - O sistema deve fazer com que o botão de voltar do navegador volte para a mesma página da listagem que estava antes, ao invés de voltar para a página 1;
 - O sistema deve exibir os projetos em ordem cronológica (do mais novo até o mais antigo) na página principal;
+
+
+# Casos de uso do sistema
+Abaixo estão listados os casos de uso do sistema:
+- [Compartilhar projeto]([https://link-url-here.org](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/Compartilhar-projeto.md))
+- [Acessar projeto](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/acessar-projeto.md)
+- [Cadastrar projeto](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/cadastrar-projeto.md)
+- [Contatar um integrante](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/contatar-integrantes.md)
+- [Desativar um projeto](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/desativar-projeto.md)
+- [Editar um projeto](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/editar-projeto.md)
+- [Exibir desenvolvedores](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/exibir-desenvolvedores.md)
+- [Filtrar projetos](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/filtrar-projetos.md)
+- [Log in](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/log-in.md)
+- [Log out](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/log-out.md)
