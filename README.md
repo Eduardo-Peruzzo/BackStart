@@ -73,7 +73,7 @@ Os requisitos não-funcionais descrevem as qualidades ou atributos do sistema, c
 
 # Casos de uso do sistema
 Abaixo estão listados os casos de uso do sistema:
-- [Compartilhar projeto]([https://link-url-here.org](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/Compartilhar-projeto.md))
+- [Compartilhar projeto](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/Compartilhar-projeto.md)
 - [Acessar projeto](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/acessar-projeto.md)
 - [Cadastrar projeto](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/cadastrar-projeto.md)
 - [Contatar um integrante](https://github.com/Eduardo-Peruzzo/BackStart/blob/main/Casos%20de%20uso/contatar-integrantes.md)
