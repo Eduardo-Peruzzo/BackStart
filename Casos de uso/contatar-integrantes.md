@@ -1,4 +1,4 @@
-# Mostrar detalhes de um projeto
+# Contatar um integrante
 
 ## Atores:
 - Usuário do site.
@@ -10,4 +10,4 @@
 - O sistema deverá exibir alguma forma de contato com os desenvolvedores; por exemplo, email.
 
 ## Pós-condições:
-- Após o fluxo principal, o usuário terá contactado os desenvolvedores.
+- Após o fluxo principal, o sistema estará exibindo os dados de contato dos integrantes até que o usuário saia dessa tela de exibição.
