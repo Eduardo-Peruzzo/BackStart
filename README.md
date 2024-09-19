@@ -27,9 +27,9 @@ Utilizando essa ferramenta para planejar o sistema dos portfólios do IBMEC, as 
 - **What (o quê?)**: Sistema de porfólios do IBMEC.
 - **Why (por quê?)**: Criar um ambiente onde seja possível exibir os projetos criados no IBMEC para o resto do mundo, de maneira atrativa e inovadora.
 - **Where (onde?)**: Uma página online.
-- **When (quando?)**: No final do período (2024.2) o sistema será terminado e pode ser utilizado quando empresas forem buscar projetos feitos pelos alunos da IBMEC.
+- **When (quando?)**: No final do período (2024.2) o sistema será terminado e pode ser utilizado quando empresas forem buscar projetos feitos pelos alunos do IBMEC.
 - **Who (quem?)**: Alunos da turma de Projeto Front-End irão criar o sistema, para que os alunos do IBMEC o utilizem, bem como outras empresas para acessar o sistema.
-- **How (como?)**: Utilizando conhecimentos sobre as linguagens usadas para a criação de sites na internet e sobre design gráfico. Ele poderá ser utilizado de duas formas, alunos poderão colocar seus projetos no sistema (por meio de um administrador), e também será usado por empresas para buscar e descobrir projetos feitos na IBMEC.
+- **How (como?)**: Utilizando conhecimentos sobre as linguagens usadas para a criação de sites na internet e sobre design gráfico. Ele poderá ser utilizado de duas formas, alunos poderão colocar seus projetos no sistema (por meio de um administrador), e também será usado por empresas para buscar e descobrir projetos feitos no IBMEC.
 - **How much (quanto?)**: Alguns meses de trabalho.
 
 # Requisitos do sistema
@@ -51,13 +51,13 @@ Os requisitos funcionais descrevem as funcionalidades específicas que um sistem
 - O sistema deverá possibilitar que alunos cadastrem novos projetos:
   - Os alunos devem recorrer ao Administrador para cadastrar novos projetos.
 - O sistema deve possuir um endereço separado para que o administrador possa fazer login, além disso, deve deve ter um botão de logout exclusivo para o mesmo;
-- O sistema deve ter um meio para retornar ao site da IBMEC;
+- O sistema deve ter um meio para retornar ao site do IBMEC;
 - O sistema deve ter um link de "home" para voltar à página principal;
 - O sistema deve possuir um link "sobre nós" em cada projeto que diz respeito aos seus desenvolvedores, e também deve haver um "sobre nós" para os desenvolvedores do próprio sistema;
 
 ## Requisitos não-funcionais:
 Os requisitos não-funcionais descrevem as qualidades ou atributos do sistema, como o desempenho do próprio
-- O sistema deverá ter a identidade visual da IBMEC;
+- O sistema deverá ter a identidade visual do IBMEC;
   - O manual de marca do IBMEC deve ser utilizado.
 - O sistema deverá possuir as opções de língua inglesa e portuguesa;
 - O sistema deverá ser feito em React;
