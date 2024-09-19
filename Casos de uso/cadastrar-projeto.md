@@ -7,7 +7,7 @@
 - O usuário deve ter realizado o login como administrador.
 
 ## Fluxo principal:
-- O administrador vai se deparar com a tela para cadastro de um projeto e terá de inserir:
+- O sistema exibirá a tela para cadastro de um projeto e o administrador terá que inserir:
   - Pelo menos uma imagem;
   - Descrição do projeto, tecnologias utilizadas, documentos, tabelas etc;
   - Integrantes do grupo que criou o projeto e suas afiliações (aluno, professor etc);
