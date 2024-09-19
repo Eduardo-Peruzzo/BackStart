@@ -11,6 +11,9 @@
     - Data de início;
     - Data de fim;
     - Linguagem de programação.
+    - Tecnologias utilizadas
+    - Ferramentas utilizadas
+    - Unidade do IBMEC
 
 ## Pós-condições:
 - Após o fluxo principal, o sistema exibirá os projetos filtrados pelo filtro que o usuário selecionou.
