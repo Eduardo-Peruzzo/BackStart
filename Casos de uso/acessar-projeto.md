@@ -7,7 +7,7 @@
 - O usuário deve ter clicado em um projeto de interesse para ver seus detalhes.
 
 ## Fluxo principal:
-- O sistema mostrará os detalhes do projeto específico que foi clicado:
+- O usuário verá os detalhes do projeto específico que foi clicado:
   - Pelo menos uma imagem;
   - Descrição do projeto, tecnologias utilizadas, documentos, tabelas etc;
   - Integrantes do grupo que criou o projeto e suas afiliações (aluno, professor etc);
