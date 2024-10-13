@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Caixa from "../Caixa/Caixa";
 
 const Quadro = styled.div`
   display: flex;
@@ -7,5 +6,6 @@ const Quadro = styled.div`
   gap: .4em;
   padding: 1em .20em;
   flex-wrap: wrap;
+  justify-content: center;
 `
 export default Quadro

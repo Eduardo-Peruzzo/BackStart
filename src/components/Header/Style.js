@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 const Top = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 1;
   padding: 4vh 3.5vw;
   background-color: var(--primaria);
   display: flex;
@@ -8,7 +11,11 @@ const Top = styled.header`
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  a {
+  img {
+    max-width: 6em;
+    max-height: 5em;
+  }
+  .botao {
     text-align: center;
     padding: .3em .5em;
     margin: 0 .7em;
@@ -23,7 +30,8 @@ const Top = styled.header`
       background-color: var(--destaque);
       color: var(--secundaria);
     }
-  };
+  }
+
 `
 
 export {Top};
