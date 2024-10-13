@@ -21,11 +21,12 @@
 }
 
 /* borda vermelha em todos os elementos para debug */
-/** {
+/* * {
   outline: red solid 1px;
-}*/
+} */
 
 body {
+  height: 100vh;
   margin: 0;
   font-family: 'Lora', serif;
   background-color: var(--background);

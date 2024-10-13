@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 const Base = (props) => (
@@ -6,6 +7,7 @@ const Base = (props) => (
     <div className="container">
       {props.children}
     </div>
+    <Footer />
   </>
 )
 

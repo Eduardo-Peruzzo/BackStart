@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-const Top = styled.header`
-  padding: 4vh 3.5vw;
+const Bottom = styled.footer`
+  padding: 2vh 3vw;
   background-color: var(--primaria);
   display: flex;
   flex-direction: row;
@@ -24,6 +24,6 @@ const Top = styled.header`
       color: var(--secundaria);
     }
   };
-`
+`;
 
-export {Top};
+export {Bottom};

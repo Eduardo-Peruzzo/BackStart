@@ -7,6 +7,11 @@ const Home = () => {
       <h1>
      Aplicação React Base
       </h1>
+      <p>oi</p>
+      <p>oi</p>
+      <p>oi</p>
+      <p>oi</p>
+      <p>oi</p>
     </Base>
   )
 }
