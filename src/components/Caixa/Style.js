@@ -5,8 +5,6 @@ const Quadrado = styled.div`
     height: 280px;
     border: 3px solid var(--primaria);
     border-radius: 10px;
-    position: relative;
-    top: 150px;
     margin-bottom: 10px;
     margin-right: 10px;
     `
@@ -22,12 +20,10 @@ const Quadrado = styled.div`
         border-top-right-radius: 10px;
     `
     const NomeProj = styled.h4`
-        position: absolute;
         top: 140px;
         padding: 4px;
     `
     const DescProj = styled.p`
-        position: absolute;
         top: 160px;
         padding: 4px;
         font-size: 12px;

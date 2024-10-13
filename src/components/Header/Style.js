@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 const Top = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 1;
   padding: 4vh 3.5vw;
   background-color: var(--primaria);
   display: flex;
