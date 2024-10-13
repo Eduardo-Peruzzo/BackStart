@@ -26,7 +26,6 @@
 } */
 
 body {
-  height: 100vh;
   margin: 0;
   font-family: 'Lora', serif;
   background-color: var(--background);
