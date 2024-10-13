@@ -2,16 +2,14 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import Home from "./pages/Home";
 import { HashRouter, Route, Routes } from "react-router-dom";
-// import Fotos from "./pages/Fotos";
-// import Login from "./pages/Login";
-// import Logout from "./pages/Logout";
+
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
-// import Atletas from "./pages/Atletas";
-// import Nova from "./pages/Nova";
-// import SobreNos from "./pages/SobreNos";
+import Home from "./pages/Home";
+import Projeto from "./pages/Projeto";
+import Login from "./pages/Login";
+
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -29,12 +27,9 @@ root.render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        {/* <Route path="/fotos" element={<Fotos/>} />
-        <Route path="/atletas" element={<Atletas/>} />
+        <Route path="/projeto" element={<Projeto/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/logout" element={<Logout/>} />
-        <Route path="/nova-pagina" element={<Nova/>} />
-        <Route path="/sobre-nos" element={<SobreNos/>} /> */}
+
       </Routes>
     </HashRouter>
   </React.StrictMode>
