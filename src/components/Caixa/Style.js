@@ -5,7 +5,6 @@ const Quadrado = styled.div`
     height: 280px;
     border: 3px solid var(--primaria);
     border-radius: 10px;
-    top: 150px;
     margin-bottom: 10px;
     margin-right: 10px;
 `
