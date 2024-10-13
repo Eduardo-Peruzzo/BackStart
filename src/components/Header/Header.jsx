@@ -3,11 +3,11 @@ import { Top } from "./Style";
 
 const Header = () => (
   <Top>
+    <img src="logo-ibmec.png" alt="logo ibmec" />
+    <div class="botoes">
     <Link to="/">Home</Link>
-    <Link to="/fotos">Fotos</Link>
-    <Link to="/atletas">Atletas</Link>
-    <Link to="/nova-pagina">Oi</Link>
-    <Link to="/sobre-nos">Sobre nós</Link>
+    <Link to="/">PT-BR | ENG</Link>
+    </div>
 
   </Top>
 )
