@@ -8,11 +8,11 @@ const Projetos = (props) => (
         <Caixa></Caixa>
         <Caixa></Caixa>
         <Caixa></Caixa>
-        {/* <Caixa></Caixa>
         <Caixa></Caixa>
         <Caixa></Caixa>
         <Caixa></Caixa>
-        <Caixa></Caixa> */}
+        <Caixa></Caixa>
+        <Caixa></Caixa>
     </Quadro>
 )
 
