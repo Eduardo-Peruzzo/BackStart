@@ -3,16 +3,7 @@ import Caixa from "../Caixa/Caixa";
 
 const Projetos = (props) => (
     <Quadro>
-        <Caixa></Caixa>
-        <Caixa></Caixa>
-        <Caixa></Caixa>
-        <Caixa></Caixa>
-        <Caixa></Caixa>
-        <Caixa></Caixa>
-        <Caixa></Caixa>
-        <Caixa></Caixa>
-        <Caixa></Caixa>
-        <Caixa></Caixa>
+        {props.children}
     </Quadro>
 )
 
