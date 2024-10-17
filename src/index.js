@@ -9,6 +9,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import Home from "./pages/Home";
 import Projeto from "./pages/Projeto";
 import Login from "./pages/Login";
+import SobreNos from "./pages/SobreNos";
 
 
 const container = document.getElementById("root");
@@ -29,6 +30,7 @@ root.render(
         <Route path="/" element={<Home/>} />
         <Route path="/projeto" element={<Projeto/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/sobre-nos" element={<SobreNos/>} />
 
       </Routes>
     </HashRouter>
