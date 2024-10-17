@@ -25,11 +25,11 @@ const InputPesquisar = styled.input`
     background-color: transparent;
         margin: auto;
         width: 6.5em;
-        height: 1.5em;
+        height: 2em;
         border-width: 0px;
         padding: 2px;
         padding-left: 20px;
-        font-size: 32px;
+        font-size: 20px;
         text-align: left;
     &:focus{
         outline: none;
@@ -57,8 +57,8 @@ const DivFiltrar = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin: 10px;
     padding: 5px;
     align-items: center;

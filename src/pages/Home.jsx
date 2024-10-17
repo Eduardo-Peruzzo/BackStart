@@ -1,7 +1,7 @@
 import Base from "./Base"
 import AbaSuperior from "../components/AbaSuperior/AbaSuperior";
-import Projetos from "../components/Projetos/Projetos"
-import Caixa from "../components/Caixa/Caixa";
+import ContainerProjetos from "../components/ContainerProjetos/ContainerProjetos"
+import CaixaProjeto from "../components/CaixaProjeto/CaixaProjeto";
 import dados from "../data/dados-projetos.json"
 import Paginacao from "../components/Paginacao/Paginacao";
 
@@ -10,17 +10,18 @@ const Home = () => {
     <Base>
       <AbaSuperior/>
       
-      <Projetos>
+      <ContainerProjetos>
         {
           dados.map( (elemento, index) => (
-            <Caixa
+            <CaixaProjeto
               key={index}
+              id={elemento.id}
               nome={elemento.nome}
               desc={elemento.desc}
             />
           ))
         }
-      </Projetos>
+      </ContainerProjetos>
       <Paginacao></Paginacao>
     </Base>
   )
