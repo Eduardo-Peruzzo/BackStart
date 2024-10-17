@@ -8,7 +8,6 @@ const Container_paginacao = styled.div`
     align-items: center;
 `
 
-
 const Paginas = styled.p`
     color: var(--primaria);
     font-size: 25px;
