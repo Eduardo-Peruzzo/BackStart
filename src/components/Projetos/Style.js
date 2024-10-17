@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Quadro = styled.div`
+  width: 95%;
   position: relative;
   margin: 0 3em;
   display: flex;

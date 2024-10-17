@@ -24,12 +24,13 @@ const Foto = styled.div`
 const NomeProj = styled.h4`
         top: 140px;
         padding: 4px;
+        font-size: 18px;
 `
 
 const DescProj = styled.p`
         top: 160px;
         padding: 4px;
-        font-size: 12px;
+        font-size: 14px;
         text-align: justify;
 `
 export {Quadrado, Foto, NomeProj, DescProj}

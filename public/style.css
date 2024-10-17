@@ -25,6 +25,10 @@
   outline: red solid 1px;
 } */
 
+html{
+  background-color: var(--primaria);
+}
+
 body {
   margin: 0;
   font-family: 'Lora', serif;
