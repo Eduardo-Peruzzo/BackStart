@@ -38,6 +38,10 @@ const Container_botoes = styled.div`
   display: flex;
   margin-top: 30px;
   padding-left: 2.5vw;
+  .filtragem {
+    display: flex;
+    margin-right: 60vw;
+  }
 `
 
 const Pesquisa = styled.div`
@@ -57,6 +61,12 @@ const Texto = styled.p`
   padding: 0 10px;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  .pagina {
+    color: var(--primaria);
+    margin: 0;
+  }
 `
 
 const Filtro = styled.div`
