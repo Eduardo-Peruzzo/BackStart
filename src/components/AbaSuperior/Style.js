@@ -22,14 +22,14 @@ const DivPesquisar = styled.div`
     `
 const InputPesquisar = styled.input`
     background-color: transparent;
-    margin: auto;
-    width: 16em;
-    height: 3em;
-    border-width: 0px;
-    padding: 2px;
-    padding-left: 20px;
-    font-size: 16px;
-    text-align: left;
+        margin: auto;
+        width: 16em;
+        height: 3em;
+        border-width: 0px;
+        padding: 2px;
+        padding-left: 20px;
+        font-size: 16px;
+        text-align: left;
     &:focus{
         outline: none;
     }
