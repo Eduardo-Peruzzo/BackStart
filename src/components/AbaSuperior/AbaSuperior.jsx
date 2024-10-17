@@ -8,7 +8,7 @@ const AbaSuperior = ( props ) => (
                 <BotaoPesquisar> <ImgPesquisa src="imagens/icons/search.png" alt="icon created by Tanah Basah - Flaticon"/></BotaoPesquisar>
             </DivPesquisar>
 
-            <DivFiltrar id="DivFiltrar"/>
+            <DivFiltrar id="DivFiltrar"><img src="imagens/icons/filtro.png" alt="" /></DivFiltrar>
         </DivAreaPesquisa>
 
         <DivPaginacao id="DivPaginacao">

@@ -34,49 +34,6 @@ const Top = styled.header`
   }
 
 `
-const Container_botoes = styled.div`
-  display: flex;
-  margin-top: 30px;
-  padding-left: 2.5vw;
-  .filtragem {
-    display: flex;
-    margin-right: 60vw;
-  }
-`
 
-const Pesquisa = styled.div`
-  border: solid 2px var(--primaria);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  width: 15em;
-  height: 3em;
-  margin-right: 2.5vw;
-`
 
-const Texto = styled.p`
-  color: #A8A4A4;
-  font-size: 32px;
-  padding: 0 10px;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  align-items: center;
-  .pagina {
-    color: var(--primaria);
-    margin: 0;
-  }
-`
-
-const Filtro = styled.div`
-  border: solid 2px var(--primaria);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 13px;
-  width: 3em;
-  height: 3em;
-`
-
-export {Top, Pesquisa, Texto, Container_botoes, Filtro};
+export {Top};
