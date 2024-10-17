@@ -26,6 +26,7 @@ const Top = styled.header`
     color: var(--background);
     text-transform: uppercase;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px black;
     &:hover{
       background-color: var(--destaque);
       color: var(--secundaria);
@@ -55,6 +56,7 @@ const Texto = styled.p`
   font-size: 32px;
   padding: 0 10px;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 `
 
 const Filtro = styled.div`
