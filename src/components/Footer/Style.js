@@ -19,6 +19,7 @@ const Bottom = styled.footer`
     color: var(--background);
     text-transform: uppercase;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px black;
     &:hover{
       background-color: var(--destaque);
       color: var(--secundaria);

@@ -3,7 +3,7 @@ import { Bottom } from "./Style";
 
 const Footer = () => (
     <Bottom>
-        <Link to="/">Sobre nós</Link>
+        <Link to="/sobre-nos">Sobre nós</Link>
     </Bottom>
 );
 
