@@ -7,7 +7,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Home from "./pages/Home";
-import Projeto from "./pages/Projeto";
+import ProjetoDetalhes from "./pages/ProjetoDetalhes";
 import Login from "./pages/Login";
 import SobreNos from "./pages/SobreNos";
 
@@ -28,7 +28,7 @@ root.render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/projeto/:id" element={<Projeto/>} />
+        <Route path="/projeto/:id" element={<ProjetoDetalhes/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/sobre-nos" element={<SobreNos/>} />
 
