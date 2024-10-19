@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const AreaInicial = styled.div`
-    width: 100vw;
+    width: 100%;
     height: auto;
 `
 
