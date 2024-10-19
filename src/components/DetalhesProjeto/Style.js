@@ -4,7 +4,7 @@ const AreaInicial = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 10px;
+    /* padding: 10px; */
     width: 100%;
     height: 25em;
 `
@@ -14,6 +14,7 @@ const ImagemProjeto = styled.div`
     align-items: center;
     justify-content: center;
     width: 45%;
+    height: 100%;
     position: relative;
     &:hover #seta-direita{
         opacity: 1;
@@ -22,7 +23,8 @@ const ImagemProjeto = styled.div`
         opacity: 1;
     }
     img {
-        max-width: 95%;
+        width: 95%;
+        height: 95%;
     }
     button {
         border-width: 0;
@@ -34,14 +36,14 @@ const ImagemProjeto = styled.div`
     }
     #seta-esquerda {
         position: absolute;
-        right: 83%;
+        right: 87%;
         max-width: 10%;
         opacity: 0;
         transition: 0.3s;
     }
     #seta-direita {
         position: absolute;
-        left: 83%;
+        left: 87%;
         max-width: 10%;
         opacity: 0;
         transition: 0.3s;
@@ -54,15 +56,18 @@ const InfoProjeto = styled.div`
     h1 {
         text-align: center;
     }
-    h3 {
+    h4 {
         text-align: left;
         margin-top: 5px;
+        font-size: 16px;
+        margin-bottom: 10px;
     }
     p {
         margin: 5px 0;
     }
     ul {
-        margin: 5px 0;
+        margin-bottom: 15px;
+        margin-top: 0;
     }
     li {
         font-weight: bold;
@@ -70,7 +75,9 @@ const InfoProjeto = styled.div`
 `
 
 const DescProjeto = styled.div`
-    width: 100%;
+    width: 97%;
+    padding: 15px;
+    padding-right: 10px;
 `
 
 

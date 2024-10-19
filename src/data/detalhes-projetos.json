@@ -1,12 +1,24 @@
 [
     {
-        "titulo": "Título do Projeto",
+        "id": "primeiro-computador",
+        "titulo": "O Primeiro Computador",
         "desenvolvedores": ["John Presper Eckert (Enhenheiro)", "John Mauchly (Engenheiro)"],
+        "data": "Data: 1943-1945",
+        "local": "Local: Universidade da Pensilvânia, Filadélfia, EUA",
+        "resumo": "O ENIAC (Electronic Numerical Integrator and Computer) foi o primeiro computador eletrônico de uso geral, revolucionando a forma como cálculos eram realizados e marcando o início da era da computação. Originalmente desenvolvido para o Exército dos Estados Unidos durante a Segunda Guerra Mundial, o ENIAC foi projetado para calcular tabelas de artilharia, mas rapidamente se tornou uma peça fundamental na pesquisa científica e industrial. ",
+        "descricao": "descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição ",
+        "sobrenos": "",
+        "foto": "imagens/primeiro-computador.png"
+    },
+    {
+        "id": "projeto-exemplo",
+        "titulo": "Título do Projeto",
+        "desenvolvedores": ["dev1", "dev2"],
         "data": "",
         "local": "",
         "resumo": "resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo ",
         "descricao": "descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição ",
         "sobrenos": "",
-        "foto": "imagens/primeiro-computador.png"
+        "foto": "imagens/old-computer-1.jpg"
     }
   ]

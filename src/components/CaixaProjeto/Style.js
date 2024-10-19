@@ -43,5 +43,6 @@ const DescProj = styled.p`
         font-size: 14px;
         text-align: justify;
         color: black;
+        margin: 0;
 `
 export {Quadrado, Foto, NomeProj, DescProj}

@@ -10,12 +10,14 @@ const DetalhesProjeto = (props) => (
         </ImagemProjeto>
         <InfoProjeto id="InfoProjeto">
             <h1>{props.titulo}</h1>
-            <h3>Quem criou o projeto:</h3>
+            <h4>Quem criou o projeto:</h4>
             <ul>
                 {props.desenvolvedores.map((elemento, index) => (
                     <li key={index}>{elemento}</li>
                 ))}
             </ul>
+            <h4>{props.data}</h4>
+            <h4>{props.local}</h4>
             <p>{props.resumo}</p>
         </InfoProjeto>
     </AreaInicial>

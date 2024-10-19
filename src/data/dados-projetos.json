@@ -1,14 +1,14 @@
 [
     {
-        "id": "projeto-backstart",
-        "nome": "Projeto BackStart",
-        "desc": "Descrição breve do projeto.",
+        "id": "primeiro-computador",
+        "nome": "Primeiro computador",
+        "desc": "Primeiro computador já criado, servindo de base para todos as tecnologias que vieram depois.",
         "foto": "imagens/primeiro-computador.png"
     },
     {
-        "id": "",
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto."
+        "id": "projeto-exemplo",
+        "nome": "Título do Projeto exemplo",
+        "desc": "Descrição breve do projeto que está servindo de exemplo genérico."
     },
     {
         "id": "",
