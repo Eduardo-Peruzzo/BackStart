@@ -8,7 +8,8 @@
     {
         "id": "projeto-exemplo",
         "nome": "Título do Projeto exemplo",
-        "desc": "Descrição breve do projeto que está servindo de exemplo genérico."
+        "desc": "Descrição breve do projeto que está servindo de exemplo genérico.",
+        "foto": "imagens/old-computer-1.jpg"
     },
     {
         "id": "",
