@@ -1,12 +1,12 @@
 [
     {
-        "titulo": "Título do Projeto", 
-        "desenvolvedores": "",
+        "titulo": "Título do Projeto",
+        "desenvolvedores": ["John Presper Eckert (Enhenheiro)", "John Mauchly (Engenheiro)"],
         "data": "",
         "local": "",
-        "resumo": "",
-        "descricao": "",
-        "sobre-nos": "",
-        "foto": ""
+        "resumo": "resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo ",
+        "descricao": "descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição ",
+        "sobrenos": "",
+        "foto": "imagens/primeiro-computador.png"
     }
   ]

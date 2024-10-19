@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Base>
       <AbaSuperior/>
-      
+
       <ContainerProjetos>
         {
           dados.map( (elemento, index) => (
@@ -18,6 +18,7 @@ const Home = () => {
               id={elemento.id}
               nome={elemento.nome}
               desc={elemento.desc}
+              foto={elemento.foto}
             />
           ))
         }

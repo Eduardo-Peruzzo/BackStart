@@ -2,7 +2,8 @@
     {
         "id": "projeto-backstart",
         "nome": "Projeto BackStart",
-        "desc": "Descrição breve do projeto."
+        "desc": "Descrição breve do projeto.",
+        "foto": "imagens/primeiro-computador.png"
     },
     {
         "id": "",
