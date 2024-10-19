@@ -10,19 +10,6 @@ const DetalhesProjeto = (props) => (
         </InfoProjeto>
     </AreaInicial>
     <DescProjeto>
-        <p>Principais características do projeto:</p>
-        <ul>
-            <li>Dimensões:</li>
-                <li class="espaco-lista">Com impressionantes 30 toneladas, o ENIAC ocupava uma sala inteira de aproximadamente 167 metros quadrados, o equivalente a uma pequena casa</li>
-            <li>Componentes:</li>
-                <li class="espaco-lista">Equipado com 17.468 válvulas a vácuo, 7.200 diodos de cristal, 1.500 relés, 70 mil resistores e 10 mil capacitores, o ENIAC era uma verdadeira obra de engenharia da época.</li>
-            <li>Capacidade de Processamento:</li>
-                <li class="espaco-lista">O ENIAC realizava 5.000 operações por segundo, uma velocidade incomparável para os padrões da época. Para fins de comparação, o ENIAC era cerca de mil vezes mais rápido que os sistemas de computação mecânicos da época.</li>
-            <li>Programação manual:</li>
-                <li class="espaco-lista"> Diferentemente dos computadores modernos, o ENIAC não possuía uma memória programável. A sua programação era feita manualmente, através da conexão de cabos e ajustes de interruptores. Isso fazia com que a mudança de um programa para outro levasse dias.
-                </li>
-        </ul>
-
     </DescProjeto>
     </>
 );

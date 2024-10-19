@@ -27,4 +27,5 @@ const DescProjeto = styled.div`
     width: 100%;
 `
 
+
 export {AreaInicial, ImagemProjeto, InfoProjeto, DescProjeto}
