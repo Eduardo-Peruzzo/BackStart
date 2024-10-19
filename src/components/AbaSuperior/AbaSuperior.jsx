@@ -1,13 +1,10 @@
-import {DivAreaPesquisa, InputPesquisar, DivFiltrar, DivAbaSuperior, DivPaginacao, TextoPaginacao, BotaoPesquisar, DivPesquisar, ImgPesquisa} from "./Style"
+import {DivAreaPesquisa, DivFiltrar, DivAbaSuperior, DivPaginacao, TextoPaginacao } from "./Style"
+import BarraDePesquisa from "../BarraDePesquisa/BarraDePesquisa";
 
 const AbaSuperior = ( props ) => (
-    <DivAbaSuperior id="DivAbaSuperior">
-        <DivAreaPesquisa id="DivPesquisa">
-            <DivPesquisar id="DivPesquisar">
-                <InputPesquisar id="InputPesquisa" placeholder="Pesquisar..."></InputPesquisar>
-                <BotaoPesquisar> <ImgPesquisa src="imagens/icons/search.png" alt="icon created by Tanah Basah - Flaticon"/></BotaoPesquisar>
-            </DivPesquisar>
-
+    <DivAbaSuperior id="AbaSuperior">
+        <DivAreaPesquisa id="AreaPesquisa">            
+            <BarraDePesquisa id="BarraDePesquisa"/>
             <DivFiltrar id="DivFiltrar"><img src="imagens/icons/filtro.png" alt="" /></DivFiltrar>
         </DivAreaPesquisa>
 
