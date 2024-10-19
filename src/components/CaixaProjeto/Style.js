@@ -22,8 +22,11 @@ const Foto = styled.div`
         bottom: 3px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        overflow: hidden;
         img {
-                
+                width: 100%;
+                height: auto;
+                object-fit: cover;
         }
 `
 
