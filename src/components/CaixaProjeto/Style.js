@@ -22,6 +22,9 @@ const Foto = styled.div`
         bottom: 3px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        img {
+                
+        }
 `
 
 const NomeProj = styled.h4`
