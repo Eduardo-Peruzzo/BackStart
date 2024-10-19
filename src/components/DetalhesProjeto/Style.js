@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const AreaInicial = styled.div`
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    height: 25em;
 `
 
 const ImagemProjeto = styled.div`
