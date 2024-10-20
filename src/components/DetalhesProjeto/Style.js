@@ -6,7 +6,8 @@ const AreaInicial = styled.div`
     justify-content: center;
     /* padding: 10px; */
     width: 100%;
-    height: 25em;
+    min-height: 25em;
+    height: auto;
 `
 
 const ImagemProjeto = styled.div`
@@ -60,17 +61,29 @@ const InfoProjeto = styled.div`
         text-align: left;
         margin-top: 5px;
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    #criadores {
+        margin-bottom: 5px;
+    }
+    #data {
+        margin-top: 15px;
     }
     p {
         margin: 5px 0;
     }
     ul {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         margin-top: 0;
     }
     li {
         font-weight: bold;
+    }
+    a {
+        color: blue;
+    }
+    a:hover {
+        color: var(--secundaria);
     }
 `
 

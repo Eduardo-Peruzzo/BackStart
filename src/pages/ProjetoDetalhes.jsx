@@ -24,7 +24,12 @@ const ProjetoDetalhes = () => {
                 foto={elemento.foto}
                 resumo={elemento.resumo}
                 descricao={elemento.descricao}
+                especificacoes={elemento.especificacoes}
+                detalhamento={elemento.detalhamento}
+                desafios={elemento.desafios}
+                inovacaoEobjetivos={elemento.inovacaoEobjetivos}
                 sobrenos={elemento.sobrenos}
+                arquivos={elemento.arquivos}
             />
             ))
             }
