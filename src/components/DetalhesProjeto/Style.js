@@ -91,6 +91,12 @@ const DescProjeto = styled.div`
     width: 97%;
     padding: 15px;
     padding-right: 10px;
+    a {
+        color: blue;
+    }
+    a:hover {
+        color: var(--secundaria);
+    }
 `
 
 

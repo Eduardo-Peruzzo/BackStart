@@ -2,6 +2,11 @@ import { AreaInicial, DescProjeto, ImagemProjeto, InfoProjeto } from "./Style";
 
 const DetalhesProjeto = (props) => {
 
+    let arquivos;
+    if (props.arquivos != "") {
+        arquivos = <a href={props.arquivos}>Arquivos do projeto</a>
+    }
+
     return(
     <>
     <AreaInicial id="AreaInicial">
@@ -41,6 +46,7 @@ const DetalhesProjeto = (props) => {
         <h3>Inovação e Objetivos:</h3>
         <p>{props.inovacaoEobjetivos}</p>
 
+        {arquivos}
     </DescProjeto>
     </>
     )
