@@ -1,4 +1,4 @@
-import SNos from "../components/SNos/Snos";
+import SNos from "../components/SNos/SNos";
 import Base from "./Base";
 
 
