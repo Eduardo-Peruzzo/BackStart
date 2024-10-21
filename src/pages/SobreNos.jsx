@@ -1,9 +1,10 @@
+import SNos from "../components/SNos/Snos";
 import Base from "./Base";
 
 
 const SobreNos = () => (
     <Base>
-        <h1>Página Sobre Nós</h1>
+        <SNos></SNos>
     </Base>
 );
 

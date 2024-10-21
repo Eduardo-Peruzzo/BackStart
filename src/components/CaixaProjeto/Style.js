@@ -7,8 +7,13 @@ const Quadrado = styled.div`
     border-radius: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
+    transition: 0.15s;
+    
     a {
         text-decoration: none;
+    }
+    &:hover {
+        box-shadow: 3px 3px 5px gray;
     }
 `
 
