@@ -2,21 +2,26 @@ import styled from "styled-components";
 
 const AreaInicial = styled.div`
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     min-height: 25em;
     height: auto;
+    @media screen and (min-width: 1200px){
+        flex-direction: row;
+    }
 `
 
 const ImagemPrincipal = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45%;
+    width: 100%;
     height: 100%;
     position: relative;
+    margin: 10px 0px;
     &:hover #seta-direita{
         opacity: 1;
     }
@@ -49,10 +54,14 @@ const ImagemPrincipal = styled.div`
         opacity: 0;
         transition: 0.3s;
     }
+    @media screen and (min-width: 1200px) {
+        width: 45%;
+        margin: 0;
+    }
 `
 
 const InfoProjeto = styled.div`
-    width: 50%;
+    width: 100%;
     padding-right: 15px;
     h1 {
         text-align: center;
@@ -84,6 +93,9 @@ const InfoProjeto = styled.div`
     }
     a:hover {
         color: var(--secundaria);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 50%;
     }
 `
 
