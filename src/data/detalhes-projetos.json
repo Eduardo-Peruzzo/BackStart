@@ -13,7 +13,8 @@
         "inovacaoEobjetivos": "Apesar de seus desafios, o ENIAC provou ser um divisor de águas na computação. Seu sucesso inspirou a criação de computadores mais avançados e menores, além de pavimentar o caminho para o desenvolvimento de linguagens de programação e armazenamento digital de dados. O ENIAC também influenciou o desenvolvimento da arquitetura moderna de computadores, como o conceito de arquitetura de von Neumann, utilizada até hoje na maioria dos sistemas computacionais.",
         "sobrenos": "https://pt.wikipedia.org/wiki/ENIAC",
         "arquivos": "",
-        "fotoPrincipal": "imagens/primeiro-computador.png"
+        "fotoPrincipal": "imagens/primeiro-computador.png",
+        "fotos": ""
     },
     {
         "id": "projeto-exemplo",
