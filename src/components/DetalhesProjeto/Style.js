@@ -4,13 +4,13 @@ const AreaInicial = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    /* padding: 10px; */
+    flex-wrap: wrap;
     width: 100%;
     min-height: 25em;
     height: auto;
 `
 
-const ImagemProjeto = styled.div`
+const ImagemPrincipal = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +66,7 @@ const InfoProjeto = styled.div`
     #criadores {
         margin-bottom: 5px;
     }
-    #data {
+    #data-inicio {
         margin-top: 15px;
     }
     p {
@@ -97,7 +97,31 @@ const DescProjeto = styled.div`
     a:hover {
         color: var(--secundaria);
     }
+    #fotos {
+        margin-top: 15px;
+    }
+`
+
+const ImagensProjeto = styled.div`
+    width: 95%;
+    margin-top: 15px;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 3em;
+    img {
+        max-height: 30em;
+    }
+`
+
+const ContainerImagem = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 100%;
+    }
 `
 
 
-export {AreaInicial, ImagemProjeto, InfoProjeto, DescProjeto}
+export {AreaInicial, ImagemPrincipal, InfoProjeto, DescProjeto, ImagensProjeto, ContainerImagem}

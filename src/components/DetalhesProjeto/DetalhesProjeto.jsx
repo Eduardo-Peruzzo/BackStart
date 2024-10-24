@@ -1,20 +1,15 @@
-import { AreaInicial, DescProjeto, ImagemProjeto, InfoProjeto } from "./Style";
+import { AreaInicial, ContainerImagem, DescProjeto, ImagemPrincipal, ImagensProjeto, InfoProjeto } from "./Style";
 
 const DetalhesProjeto = (props) => {
-
-    let arquivos;
-    if (props.arquivos != "") {
-        arquivos = <a href={props.arquivos}>Arquivos do projeto</a>
-    }
 
     return(
     <>
     <AreaInicial id="AreaInicial">
-        <ImagemProjeto id="ImagemProjeto">
-            <img src={props.foto}/>
+        <ImagemPrincipal id="ImagemProjeto">
+            <img src={props.fotoPrincipal}/>
             <button id="seta-esquerda"><img src="imagens/icons/seta-esquerda-imagem.png"/></button>
             <button id="seta-direita"><img src="imagens/icons/seta-direita-imagem.png"/></button>
-        </ImagemProjeto>
+        </ImagemPrincipal>
         <InfoProjeto id="InfoProjeto">
             <h1>{props.titulo}</h1>
             <h4 id="criadores">Quem criou o projeto:</h4>
@@ -23,9 +18,10 @@ const DetalhesProjeto = (props) => {
                     <li key={index}>{dev}</li>
                 ))}
             </ul>
-            <a href={props.sobrenos}>Sobre os desenvolvedores</a>
-            <h4 id="data" >{props.data}</h4>
-            <h4>{props.local}</h4>
+            <a href={props.sobrenos} id="sobre-nos">Sobre os desenvolvedores</a>
+            <h4 id="data-inicio" >Data de início do projeto: {props.dataInicio}</h4>
+            {props.dataFim && (<h4 id="data-fim" >Data de finalização do projeto: {props.dataFim}</h4>)}
+            <h4 id="local">Local: {props.local}</h4>
             <p>{props.resumo}</p>
         </InfoProjeto>
     </AreaInicial>
@@ -40,13 +36,20 @@ const DetalhesProjeto = (props) => {
             ))}
         </ul>
 
-        <h3>Desafios:</h3>
-        <p>{props.desafios}</p>
+        {props.desafios && (<><h3>Desafios:</h3>
+        <p>{props.desafios}</p></>)}
 
         <h3>Inovação e Objetivos:</h3>
         <p>{props.inovacaoEobjetivos}</p>
 
-        {arquivos}
+        {props.arquivos && (<h3><a href={props.arquivos} id="arquivos">Arquivos do projeto</a></h3>)}
+
+        {props.fotos &&
+        (<><h3 id="fotos">Outras imagens do projeto:</h3>
+            <ImagensProjeto>
+                {props.fotos.map((foto, index) => (<ContainerImagem><img src={foto} key={index}/></ContainerImagem>))}
+            </ImagensProjeto>
+        </>)}
     </DescProjeto>
     </>
     )

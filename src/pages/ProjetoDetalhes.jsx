@@ -19,9 +19,11 @@ const ProjetoDetalhes = () => {
                 key={index}
                 titulo={elemento.titulo}
                 desenvolvedores={elemento.desenvolvedores}
-                data={elemento.data}
+                dataInicio={elemento.dataInicio}
+                dataFim={elemento.dataFim}
                 local={elemento.local}
-                foto={elemento.foto}
+                fotoPrincipal={elemento.fotoPrincipal}
+                fotos={elemento.fotos}
                 resumo={elemento.resumo}
                 descricao={elemento.descricao}
                 especificacoes={elemento.especificacoes}
