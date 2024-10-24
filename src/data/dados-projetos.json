@@ -12,9 +12,10 @@
         "foto": "imagens/old-computer-1.jpg"
     },
     {
-        "id": "",
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto."
+        "id": "Optimus",
+        "nome": "Optimus",
+        "desc": "O Optimus da Tesla é um robô humanoide projetado para realizar tarefas repetitivas e potencialmente perigosas, aliviando os humanos dessas atividades.",
+        "foto": "imagens/optimus-1.jpg"
     },
     {
         "id": "",

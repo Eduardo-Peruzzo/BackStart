@@ -40,5 +40,26 @@
         "arquivos": "https://g1.globo.com",
         "fotoPrincipal": "imagens/old-computer-1.jpg",
         "fotos": ["imagens/old-computer-2.jpg", "imagens/old-computer-3.jpg", "imagens/old-computer-4.jpg"]
+    },
+    {
+        "id": "Optimus",
+        "titulo": "Optimus da Tesla",
+        "desenvolvedores": ["Tesla, Inc."],
+        "dataInicio": "2021",
+        "dataFim": "Em desenvolvimento",
+        "local": "Tesla AI Day, Palo Alto, Califórnia, EUA",
+        "resumo": "Optimus é um robô humanoide projetado pela Tesla para realizar tarefas repetitivas e perigosas, educar crianças, com o objetivo de melhorar a eficiência e a segurança em ambientes de trabalho e lazer.",
+        "especificacoes": ["Altura","Peso", "Capacidade de carga","Velocidade máxima","Design"],
+        "detalhamento": ["aproximadamente 1,73 metros","cerca de 57 kg","até 20 kg","8 km/h","design humanoide que facilita a interação em ambientes projetados para humanos.","Equipado com sensores e atuadores avançados para movimento preciso e seguro.","Utiliza a mesma tecnologia de IA dos veículos autônomos da Tesla.","Capacidade de realizar tarefas como carregar objetos, operar ferramentas e realizar movimentações básicas.","Desenvolvido para melhorar a eficiência em linhas de produção e outras aplicações industriais."],
+        "topico1": "Tecnologia de Movimento",
+        "descricao1": "Optimus utiliza atuadores elétricos para um movimento natural e seguro.",
+        "topico2": "Integração de IA",
+        "descricao2": "Equipado com a mais recente tecnologia de inteligência artificial da Tesla para interação e aprendizado autônomo.",
+        "topico3": "Aplicações Práticas",
+        "descricao3": "Projetado para substituir humanos em tarefas repetitivas e perigosas, aumentando a segurança e a eficiência.",
+        "sobrenos": "",
+        "arquivos": "",
+        "fotoPrincipal": "imagens/optimus-principal.webp",
+        "fotos": ["imagens/optimus-1.jpg", "imagens/optimus-2.jpg", "imagens/optimus-3.jpg"]
     }
   ]
