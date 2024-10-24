@@ -36,11 +36,14 @@ const DetalhesProjeto = (props) => {
             ))}
         </ul>
 
-        {props.desafios && (<><h3>Desafios:</h3>
-        <p>{props.desafios}</p></>)}
+        {props.topico1 && (<><h3>{props.topico1}:</h3>
+        <p>{props.descricao1}</p></>)}
 
-        <h3>Inovação e Objetivos:</h3>
-        <p>{props.inovacaoEobjetivos}</p>
+        {props.topico2 && (<><h3>{props.topico2}:</h3>
+        <p>{props.descricao2}</p></>)}
+
+        {props.topico3 && (<><h3>{props.topico3}:</h3>
+        <p>{props.descricao3}</p></>)}
 
         {props.arquivos && (<h3><a href={props.arquivos} id="arquivos">Arquivos do projeto</a></h3>)}
 

@@ -28,8 +28,12 @@ const ProjetoDetalhes = () => {
                 descricao={elemento.descricao}
                 especificacoes={elemento.especificacoes}
                 detalhamento={elemento.detalhamento}
-                desafios={elemento.desafios}
-                inovacaoEobjetivos={elemento.inovacaoEobjetivos}
+                topico1={elemento.topico1}
+                topico2={elemento.topico2}
+                topico3={elemento.topico3}
+                descricao1={elemento.descricao1}
+                descricao2={elemento.descricao2}
+                descricao3={elemento.descricao3}
                 sobrenos={elemento.sobrenos}
                 arquivos={elemento.arquivos}
             />
