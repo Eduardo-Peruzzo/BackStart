@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Quadro = styled.div`
   width: 95%;
   position: relative;
-  margin: 0 3em;
+  margin: auto;
   display: flex;
   flex-direction: row;
   gap: .6em;

@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 const DivAbaSuperior = styled.div`
     display: flex;
+    flex-direction: column;
     width: 95%;
     margin: auto;
     padding: 1em .20em;
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+    }
 `
 
 const DivAreaPesquisa = styled.div`
@@ -31,6 +35,7 @@ const DivPaginacao = styled.div`
     display: flex;
     align-items: center;
     width: 20%;
+    min-width: 5em;
     height: 5em;
     `
 
