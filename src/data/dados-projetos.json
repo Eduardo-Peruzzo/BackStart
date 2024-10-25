@@ -18,9 +18,10 @@
         "foto": "imagens/optimus-1.jpg"
     },
     {
-        "id": "",
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto."
+        "id": "Metaverso",
+        "nome": "Metaverso",
+        "desc": "O Metaverso é um espaço virtual coletivo e compartilhado, que simula a realidade por meio de dispositivos digitais e tecnologias como realidade virtual (VR) e realidade aumentada (AR).",
+        "foto": "imagens/Meta-Planets-img-16x9-1-e1635949371546.jpg"
     },
     {
         "id": "",

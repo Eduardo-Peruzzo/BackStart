@@ -61,5 +61,26 @@
         "arquivos": "",
         "fotoPrincipal": "imagens/optimus-principal.webp",
         "fotos": ["imagens/optimus-1.jpg", "imagens/optimus-2.jpg", "imagens/optimus-3.jpg"]
+    },
+    {
+        "id": "Metaverso",
+        "titulo": "Metaverso da Meta",
+        "desenvolvedores": ["Meta."],
+        "dataInicio": "2021",
+        "dataFim": "Em desenvolvimento",
+        "local": "Meta Headquarters, Menlo Park, Califórnia, EUA",
+        "resumo": "O Metaverso da Meta (anteriormente Facebook) é uma plataforma de realidade virtual (VR) e aumentada (AR), destinada a criar um ambiente digital interativo e imersivo onde usuários podem interagir, socializar, trabalhar, estudar e até realizar transações. O projeto representa a visão de longo prazo da Meta para o futuro da internet, unindo redes sociais, ambientes de VR/AR, inteligência artificial e blockchain.",
+        "especificacoes": ["Imersão em Realidade Virtual e Realidade Aumentada","Avatares Personalizados e Expressivos", "Ambientes Virtuais Personalizáveis"],
+        "detalhamento": ["A Meta busca criar uma experiência totalmente imersiva, permitindo que os usuários participem do metaverso por meio de dispositivos de realidade virtual como o Meta Quest 2 e o Meta Quest Pro.","A criação de avatares é central ao metaverso da Meta. Os usuários podem criar representações digitais de si mesmos, com opções de personalização detalhadas para refletir suas identidades e estilos.","Usuários e criadores têm liberdade para criar mundos personalizados no metaverso, usando ferramentas de construção intuitivas. Isso permite que qualquer pessoa crie ambientes temáticos, jogos, salas de reunião, eventos virtuais e muito mais.","Equipado com sensores e atuadores avançados para movimento preciso e seguro.","Utiliza a mesma tecnologia de IA dos veículos autônomos da Tesla.","Capacidade de realizar tarefas como carregar objetos, operar ferramentas e realizar movimentações básicas.","Desenvolvido para melhorar a eficiência em linhas de produção e outras aplicações industriais."],
+        "topico1": "Tecnologias utilizadas",
+        "descricao1": "O Metaverso da Meta é acessado principalmente através de dispositivos como o Meta Quest (anteriormente Oculus Quest), óculos de realidade virtual da empresa. Em 2023, a Meta lançou o Meta Quest Pro, um dispositivo avançado que combina realidade virtual e realidade mista (VR/AR) para criar experiências mais ricas e profissionais.",
+        "topico2": "Plataforma Horizon Worlds",
+        "descricao2": "A Horizon Worlds é a plataforma social do Metaverso da Meta, onde usuários podem criar avatares e interagir em ambientes virtuais. Eles podem explorar mundos criados por outros usuários, participar de eventos virtuais e construir seus próprios espaços dentro do metaverso.",
+        "topico3": "Plataforma Horizon Workrooms",
+        "descricao3": "Além de Horizon Worlds, a Meta lançou Horizon Workrooms, voltada para reuniões virtuais em VR, permitindo que equipes trabalhem juntas em um ambiente 3D e criem experiências de colaboração mais imersivas.",
+        "sobrenos": "",
+        "arquivos": "",
+        "fotoPrincipal": "imagens/Meta-Planets-img-16x9-1-e1635949371546.jpg",
+        "fotos": ""
     }
   ]
