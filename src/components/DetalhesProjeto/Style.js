@@ -119,10 +119,13 @@ const ImagensProjeto = styled.div`
     margin-top: 15px;
     gap: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-row-gap: 3em;
     img {
         max-height: 30em;
+    }
+    @media screen and (min-width: 576px) {
+        grid-template-columns: 1fr 1fr;
     }
 `
 
