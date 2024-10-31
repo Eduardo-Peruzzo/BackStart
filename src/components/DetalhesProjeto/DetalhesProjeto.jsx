@@ -7,8 +7,8 @@ const DetalhesProjeto = (props) => {
     <AreaInicial id="AreaInicial">
         <ImagemPrincipal id="ImagemProjeto">
             <img src={props.fotoPrincipal}/>
-            <button id="seta-esquerda"><img src="imagens/icons/seta-esquerda-imagem.png"/></button>
-            <button id="seta-direita"><img src="imagens/icons/seta-direita-imagem.png"/></button>
+            {/* <button id="seta-esquerda"><img src="imagens/icons/seta-esquerda-imagem.png"/></button>
+            <button id="seta-direita"><img src="imagens/icons/seta-direita-imagem.png"/></button> */}
         </ImagemPrincipal>
         <InfoProjeto id="InfoProjeto">
             <h1>{props.titulo}</h1>
