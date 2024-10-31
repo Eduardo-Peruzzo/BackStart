@@ -4,11 +4,19 @@ import dados from "../data/computadores.json";
 import Protegida from "./Protegida";
 
 const Fotos = () => {
+
+  const {id} = useParams();
+
+  const dadosFiltrados = dados.filter(
+    (elemento) => (elemento.id === parseInt(id) || !id)
+    
+  )
+
  
   return (
       <Protegida>
         <ListContainer>
-          {dados.map(
+          {dadosFiltrados.map(
             (el, index) => (
               <FotoCard 
                 key={index}
