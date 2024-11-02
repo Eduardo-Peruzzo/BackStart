@@ -6,9 +6,8 @@ const DivPesquisar = styled.div`
     border: 3px solid var(--primaria);
     border-radius: 50px;
     margin-right: 1.5em;
-    `
-const InputPesquisar = styled.input`
-    background-color: transparent;
+    input {
+        background-color: transparent;
         margin: auto;
         width: 6.5em;
         height: 1.5em;
@@ -17,7 +16,8 @@ const InputPesquisar = styled.input`
         padding-left: 20px;
         font-size: 26px;
         text-align: left;
-    &:focus{
+    }
+    input:focus{
         outline: none;
     }
 `
@@ -39,4 +39,4 @@ const ImgPesquisa = styled.img`
     height: 30px;
 `
 
-export { DivPesquisar, InputPesquisar, BotaoPesquisar, ImgPesquisa }
+export { DivPesquisar, BotaoPesquisar, ImgPesquisa }

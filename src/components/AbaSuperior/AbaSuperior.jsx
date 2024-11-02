@@ -3,8 +3,8 @@ import BarraDePesquisa from "../BarraDePesquisa/BarraDePesquisa";
 
 const AbaSuperior = ( props ) => (
     <DivAbaSuperior id="AbaSuperior">
-        <DivAreaPesquisa id="AreaPesquisa">            
-            <BarraDePesquisa id="BarraDePesquisa"/>
+        <DivAreaPesquisa id="AreaPesquisa">
+            <BarraDePesquisa id="BarraDePesquisa">{props.children}</BarraDePesquisa>
             <DivFiltrar id="DivFiltrar"><img src="imagens/icons/filtro.png" alt="" /></DivFiltrar>
         </DivAreaPesquisa>
 
