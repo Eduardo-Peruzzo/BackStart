@@ -17,7 +17,7 @@ const DivAreaPesquisa = styled.div`
     width: 80%;
     height: 5em;
     .menu-principal {
-        display: flex;
+        display: none;
         flex-direction: column;
         background: white;
         border: 1px solid var(--primaria);
