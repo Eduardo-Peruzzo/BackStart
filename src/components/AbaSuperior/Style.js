@@ -16,19 +16,84 @@ const DivAreaPesquisa = styled.div`
     display: flex;
     width: 80%;
     height: 5em;
+    .menu-principal {
+        display: none;
+        flex-direction: column;
+        background: white;
+        border: 1px solid var(--primaria);
+        border-radius: 4px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        justify-content: space-evenly;
+        gap: 0.5em;
+        max-height: 15em;
+        min-width: 10em;
+        position: absolute;
+        top: 13.5em;
+        right: 3em;
+        overflow-y: auto;
+        scrollbar-color: var(--primaria) transparent;
+        scrollbar-width: thin;
+        @media screen and (min-width: 768px){
+            position: relative;
+            top: 5em;
+            right: 0em;
+        }
+        @media screen and (min-width: 1200px){
+            flex-direction: row;
+        }
+    }
+    .tecnologias {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1200px){
+            overflow-y: auto;
+            scrollbar-color: var(--primaria) transparent;
+            scrollbar-width: thin;
+        }
+
+    }
+    .ferramentas {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1200px){
+            overflow-y: auto;
+            scrollbar-color: var(--primaria) transparent;
+            scrollbar-width: thin;
+        }
+    }
+    .unidade {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1200px){
+            overflow-y: auto;
+            scrollbar-color: var(--primaria) transparent;
+            scrollbar-width: thin;
+        }
+    }
+    p {
+        margin: 0;
+        margin-bottom: 0.2em;
+        text-align: center;
+    }
 `
 
-const DivFiltrar = styled.div`
+const BotaoFiltrar = styled.button`
     display: flex;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     margin: 10px;
     padding: 5px;
     align-items: center;
     border: 3px solid var(--primaria);
     border-radius: 13px;
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 const DivPaginacao = styled.div`
@@ -47,4 +112,4 @@ const TextoPaginacao = styled.h3`
     font-family: Arial, Helvetica, sans-serif;
 `
 
-export {DivAbaSuperior, DivAreaPesquisa, DivFiltrar, DivPaginacao, TextoPaginacao}
+export { DivAbaSuperior, DivAreaPesquisa, BotaoFiltrar, DivPaginacao, TextoPaginacao }

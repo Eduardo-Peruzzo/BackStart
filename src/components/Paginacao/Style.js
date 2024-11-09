@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Container_paginacao = styled.div`
     margin: auto;
+    margin-bottom: 1em;
     height: 3em;
     display: flex;
     justify-content: center;
