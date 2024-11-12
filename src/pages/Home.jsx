@@ -6,10 +6,29 @@ import dadosBrutos from "../data/dados-projetos.json";
 import Paginacao from "../components/Paginacao/Paginacao";
 import ReactPaginate from 'react-paginate';
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 const Home = () => {
   // FILTRAGEM DE DADOS
   const [dados, setDados] = useState(dadosBrutos);
+
+  const { criadores } = useParams();
+
+  const dadosFiltradosURL = dados.filter(
+    (elemento) => {
+      if (typeof (criadores) == "undefined") {
+        return true
+      } else {
+        for (let index = 0; index < elemento.criadores.length; index++) {
+          let nome = elemento.criadores[index];
+
+          if (nome.toLowerCase().includes(criadores.toLowerCase())) {
+            return true
+          }
+        }
+      }
+    }
+  )
 
   const filtro = (entrada) => setDados(dadosBrutos.filter(
     (elemento) => elemento.nome.toLowerCase().includes(entrada)
@@ -19,7 +38,7 @@ const Home = () => {
 
   const mudarFiltro = (filtros) => setFiltrosAtivos(filtros);
 
-  const dadosFiltrados = dados.filter((projeto) => {
+  const dadosFiltrados = dadosFiltradosURL.filter((projeto) => {
     // Pega as chaves dos filtros ativos e coloca em uma lista
     const filtrosAtivosNomes = Object.keys(filtrosAtivos).filter((chave) => filtrosAtivos[chave]);
 

@@ -28,6 +28,7 @@ root.render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/:criadores" element={<Home/>} />
         <Route path="/projeto/" element={<ProjetoDetalhes/>} />
         <Route path="/projeto/:id" element={<ProjetoDetalhes/>} />
         <Route path="/login" element={<Login/>} />
