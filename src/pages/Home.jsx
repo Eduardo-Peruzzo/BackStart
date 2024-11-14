@@ -1,10 +1,9 @@
 import Base from "./Base"
 import AbaSuperior from "../components/AbaSuperior/AbaSuperior";
-import ContainerProjetos from "../components/ContainerProjetos/ContainerProjetos"
-import CaixaProjeto from "../components/CaixaProjeto/CaixaProjeto";
 import dadosBrutos from "../data/dados-projetos.json";
+import ListaDeProjetos from "../components/ListaDeProjetos/ListaDeProjetos";
 import Paginacao from "../components/Paginacao/Paginacao";
-import ReactPaginate from 'react-paginate';
+
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -46,77 +45,37 @@ const Home = () => {
     return filtrosAtivosNomes.every((filtro) => projeto.filtros.includes(filtro));
   });
 
-  // Exibe os Projetos na Tela com um número pré-definido por página
-  function Projetos({ projetosEmTela }) {
-    return (
-      <>
-        <ContainerProjetos>
-          {projetosEmTela &&
-            projetosEmTela.map((elemento, index) => (
-              <CaixaProjeto
-                key={index}
-                id={elemento.id}
-                nome={elemento.nome}
-                desc={elemento.desc}
-                foto={elemento.foto}
-              />
-            ))}
-        </ContainerProjetos>
-      </>
-    );
-  }
+  // Definições para a paginação
+  const [paginaAtual, setpaginaAtual] = useState(1);
+  const [projetosPorPagina, setProjetosPorPagina] = useState(10);
 
-  // Pagina os itens
-  function ItensPaginados({ itensPorPagina }) {
-    const [itemOffset, setItemOffset] = useState(0);
+  const ultimoProjeto = paginaAtual * projetosPorPagina; // ultimo projeto a aparecer na tela naquela página
+  const primeiroProjeto = ultimoProjeto - projetosPorPagina; // primeiro projeto a aparecer na tela naquela página
+  const projetosEmTela = dadosFiltrados.slice(primeiroProjeto, ultimoProjeto);
 
-    const endOffset = itemOffset + itensPorPagina;
-    const projetosDispostos = dadosFiltrados.slice(itemOffset, endOffset);
-    const numeroPaginas = Math.ceil(dadosFiltrados.length / itensPorPagina);
+  const [textoPagina, settextoPagina] = useState(1);
 
-    const MudarPagina = (event) => {
-      const newOffset = (event.selected * itensPorPagina) % dadosFiltrados.length;
-      setItemOffset(newOffset);
-    };
-
-    return (
-      <>
-        <Projetos projetosEmTela={projetosDispostos} />
-
-        <nav id="react-paginate-container">
-          <ReactPaginate className='react-pag'
-            breakLabel="..."
-            previousLabel="<"
-            nextLabel=">"
-            pageLinkClassName="itensPaginas"
-            previousLinkClassName="anterior"
-            nextLinkClassName="proxima"
-            activeClassName="paginaAtual"
-
-            onPageChange={MudarPagina}
-            pageRangeDisplayed={5}
-            pageCount={numeroPaginas}
-            renderOnZeroPageCount={null}
-            hrefBuilder={(page, pageCount, selected) =>
-              page >= 1 && page <= pageCount ? `/page/${page}` : '#'
-            }>
-          </ReactPaginate>
-        </nav>
-      </>
-    );
-
-
+  const alterarPagina = () => {
+      settextoPagina(localStorage.getItem('pagina'));
   };
-
-  var paginaAtual = 1;
+  
   return (
     <Base>
-      <AbaSuperior numeroPagina={paginaAtual}
+      <AbaSuperior
         pesquisa={<input id="InputPesquisa" placeholder="Pesquisar..." type="text" onChange={(evento) => filtro(evento.target.value.toLowerCase())} />}
         filtro={<img src="imagens/icons/filtro.png" alt="" />}
         mudancaFiltro={mudarFiltro}
+        textoPagina={textoPagina}
       />
-      <ItensPaginados itensPorPagina={12} />
+
+    <ListaDeProjetos dados={projetosEmTela}/>
+    <Paginacao
+      totalProjetos={dadosFiltrados.length}
+      projetosPorPagina={projetosPorPagina}
+      setpaginaAtual={setpaginaAtual}
+      paginaAtual={paginaAtual}
+      alterarPagina={alterarPagina}
+    />
     </Base>
   )
 }

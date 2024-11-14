@@ -1,8 +1,8 @@
 import { DivAreaPesquisa, BotaoFiltrar, DivAbaSuperior, DivPaginacao, TextoPaginacao } from "./Style"
 import BarraDePesquisa from "../BarraDePesquisa/BarraDePesquisa";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
-const AbaSuperior = (props) => {
+const AbaSuperior = ( props ) => {
 
     const [opcoesFiltro, setOpcoesFiltro] = useState({
         react: false,
@@ -213,11 +213,12 @@ const AbaSuperior = (props) => {
                 </DivAreaPesquisa>
 
                 <DivPaginacao id="DivPaginacao">
-                    <TextoPaginacao id="ReferenciaPagina">Página 1</TextoPaginacao>
+                    <TextoPaginacao id="ReferenciaPagina">Página {props.textoPagina}</TextoPaginacao>
                 </DivPaginacao>
             </DivAbaSuperior >
         </>
     )
+
 };
 
 export default AbaSuperior;

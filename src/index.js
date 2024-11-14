@@ -11,7 +11,6 @@ import ProjetoDetalhes from "./pages/ProjetoDetalhes";
 import Login from "./pages/Login";
 import SobreNos from "./pages/SobreNos";
 
-
 const container = document.getElementById("root");
 const root = createRoot(container);
 
@@ -31,9 +30,9 @@ root.render(
         <Route path="/:criadores" element={<Home/>} />
         <Route path="/projeto/" element={<ProjetoDetalhes/>} />
         <Route path="/projeto/:id" element={<ProjetoDetalhes/>} />
+        <Route path="/pagina/:paginaAtual" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/sobre-nos" element={<SobreNos/>} />
-
       </Routes>
     </HashRouter>
   </React.StrictMode>
