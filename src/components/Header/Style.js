@@ -32,6 +32,10 @@ const Top = styled.header`
       color: var(--secundaria);
     }
   }
+  select{
+    border: none;
+    height: 2em;
+  }
 
 `
 

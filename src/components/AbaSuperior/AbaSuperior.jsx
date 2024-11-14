@@ -2,7 +2,8 @@ import { DivAreaPesquisa, BotaoFiltrar, DivAbaSuperior, DivPaginacao, TextoPagin
 import BarraDePesquisa from "../BarraDePesquisa/BarraDePesquisa";
 import { useState, useEffect, useRef } from "react";
 
-const AbaSuperior = ( props ) => {
+const AbaSuperior = (props) => {
+    const [linguaAtual] = useState(localStorage.getItem("lingua") || "pt");
 
     const [opcoesFiltro, setOpcoesFiltro] = useState({
         react: false,
@@ -39,6 +40,11 @@ const AbaSuperior = ( props ) => {
         }));
     };
 
+    const definirLingua = (pt, eng) => {
+        if (linguaAtual === "pt") { return pt }
+        if (linguaAtual === "eng") { return eng }
+    }
+
     const aplicarFiltros = () => props.mudancaFiltro(opcoesFiltro);
 
     return (
@@ -47,9 +53,9 @@ const AbaSuperior = ( props ) => {
                 <DivAreaPesquisa id="AreaPesquisa">
                     <BarraDePesquisa id="BarraDePesquisa">{props.pesquisa}</BarraDePesquisa>
                     <BotaoFiltrar id="BotaoFiltrar" onClick={clicarFiltro}>{props.filtro}</BotaoFiltrar>
-                    <div className="menu-principal" style={{display: "none"}}>
+                    <div className="menu-principal" style={{ display: "none" }}>
                         <div className="tecnologias">
-                            <p>Tecnologias</p>
+                            <p>{definirLingua("Tecnologias", "Technologies")}</p>
                             <label>
                                 <input
                                     type="checkbox"
@@ -122,7 +128,7 @@ const AbaSuperior = ( props ) => {
                             </label>
                         </div>
                         <div className="ferramentas">
-                            <p>Ferramentas</p>
+                            <p>{definirLingua("Ferramentas", "Tools")}</p>
                             <label>
                                 <input
                                     type="checkbox"
@@ -160,7 +166,7 @@ const AbaSuperior = ( props ) => {
                             </label>
                         </div>
                         <div className="unidade">
-                            <p>Unidade</p>
+                            <p>{definirLingua("Unidade", "Unit")}</p>
                             <label>
                                 <input
                                     type="checkbox"
@@ -208,7 +214,7 @@ const AbaSuperior = ( props ) => {
                         {/* Caso seja necessário usar um botão para aplicar os filtros ao invés de aplicar o tempo inteiro */}
                         {/* <button onClick={aplicarFiltros}>Aplicar Filtros</button> */}
 
-                        {aplicarFiltros()}
+                        {useEffect(() => { aplicarFiltros() }, [opcoesFiltro])}
                     </div>
                 </DivAreaPesquisa>
 
