@@ -20,6 +20,7 @@ const Top = styled.header`
     padding: .3em .5em;
     margin: 0 .7em;
     min-width: 5em;
+    height: 2em;
     background-color: var(--destaque);
     text-decoration: none;
     font-weight: bold;
@@ -32,11 +33,10 @@ const Top = styled.header`
       color: var(--secundaria);
     }
   }
-  select{
+  select {
     border: none;
     height: 2em;
   }
-
 `
 
 
