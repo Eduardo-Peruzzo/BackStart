@@ -2,15 +2,23 @@
     {
         "id": "primeiro-computador",
         "filtros": "react",
-        "criadores": ["John Presper Eckert", "John Mauchly"],
+        "criadores": [
+            "John Presper Eckert",
+            "John Mauchly"
+        ],
         "nome": "Primeiro computador",
         "desc": "Primeiro computador já criado, servindo de base para todos as tecnologias que vieram depois.",
         "foto": "imagens/primeiro-computador.png"
     },
     {
         "id": "projeto-exemplo",
-        "filtros": ["barra", "react"],
-        "criadores": ["eduardo"],
+        "filtros": [
+            "barra",
+            "react"
+        ],
+        "criadores": [
+            "eduardo"
+        ],
         "nome": "Título do Projeto exemplo",
         "desc": "Descrição breve do projeto que está servindo de exemplo genérico.",
         "foto": "imagens/old-computer-1.jpg"
@@ -18,7 +26,10 @@
     {
         "id": "Optimus",
         "filtros": "git",
-        "criadores": ["Elon Musk", "eduardo"],
+        "criadores": [
+            "Elon Musk",
+            "eduardo"
+        ],
         "nome": "Optimus",
         "desc": "O Optimus da Tesla é um robô humanoide projetado para realizar tarefas repetitivas e potencialmente perigosas, aliviando os humanos dessas atividades.",
         "foto": "imagens/optimus-1.jpg"
@@ -26,7 +37,10 @@
     {
         "id": "Metaverso",
         "filtros": "python",
-        "criadores": ["META", "eduardo"],
+        "criadores": [
+            "META",
+            "eduardo"
+        ],
         "nome": "Metaverso",
         "desc": "O Metaverso é um espaço virtual coletivo e compartilhado, que simula a realidade por meio de dispositivos digitais e tecnologias como realidade virtual (VR) e realidade aumentada (AR).",
         "foto": "imagens/Meta-Planets-img-16x9-1-e1635949371546.jpg"
@@ -34,14 +48,9 @@
     {
         "id": "",
         "filtros": "firebase",
-        "criadores": ["eduardo"],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
+        "criadores": [
+            "eduardo"
+        ],
         "nome": "Título do Projeto",
         "desc": "Descrição breve do projeto"
     },
@@ -57,48 +66,193 @@
         "filtros": "",
         "criadores": [],
         "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
+        "desc": "Descrição breve do projeto."
     },
     {
         "id": "",
         "filtros": "",
         "criadores": [],
         "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
+        "desc": "Descrição breve do projeto."
     },
     {
         "id": "",
         "filtros": "",
         "criadores": [],
         "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
+        "desc": "Descrição breve do projeto."
     },
     {
         "id": "",
         "filtros": "",
         "criadores": [],
         "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
+        "desc": "Descrição breve do projeto."
     },
     {
         "id": "",
         "filtros": "",
         "criadores": [],
         "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
+    },
+    {
+        "id": "",
+        "filtros": "",
+        "criadores": [],
+        "nome": "Título do Projeto",
+        "desc": "Descrição breve do projeto."
     },
     {
         "id": "primeiro-computador",
         "filtros": "react",
-        "criadores": [],
+        "criadores": [
+            "John Presper Eckert",
+            "John Mauchly"
+        ],
         "nome": "Primeiro computador",
         "desc": "Primeiro computador já criado, servindo de base para todos as tecnologias que vieram depois.",
         "foto": "imagens/primeiro-computador.png"
     },
     {
+        "id": "projeto-exemplo",
+        "filtros": [
+            "barra",
+            "react"
+        ],
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Título do Projeto exemplo",
+        "desc": "Descrição breve do projeto que está servindo de exemplo genérico.",
+        "foto": "imagens/old-computer-1.jpg"
+    },
+    {
         "id": "Optimus",
         "filtros": "git",
-        "criadores": [],
+        "criadores": [
+            "Elon Musk",
+            "eduardo"
+        ],
         "nome": "Optimus",
         "desc": "O Optimus da Tesla é um robô humanoide projetado para realizar tarefas repetitivas e potencialmente perigosas, aliviando os humanos dessas atividades.",
         "foto": "imagens/optimus-1.jpg"
@@ -106,249 +260,12 @@
     {
         "id": "Metaverso",
         "filtros": "python",
-        "criadores": [],
+        "criadores": [
+            "META",
+            "eduardo"
+        ],
         "nome": "Metaverso",
         "desc": "O Metaverso é um espaço virtual coletivo e compartilhado, que simula a realidade por meio de dispositivos digitais e tecnologias como realidade virtual (VR) e realidade aumentada (AR).",
         "foto": "imagens/Meta-Planets-img-16x9-1-e1635949371546.jpg"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "Optimus",
-        "filtros": "git",
-        "criadores": "",
-        "nome": "Optimus",
-        "desc": "O Optimus da Tesla é um robô humanoide projetado para realizar tarefas repetitivas e potencialmente perigosas, aliviando os humanos dessas atividades.",
-        "foto": "imagens/optimus-1.jpg"
-    },
-    {
-        "id": "projeto-exemplo",
-        "filtros": ["barra", "react"],
-        "criadores": [],
-        "nome": "Título do Projeto exemplo",
-        "desc": "Descrição breve do projeto que está servindo de exemplo genérico.",
-        "foto": "imagens/old-computer-1.jpg"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
-    },
-    {
-        "id": "",
-        "filtros": "",
-        "criadores": [],
-        "nome": "Título do Projeto",
-        "desc": "Descrição breve do projeto"
     }
-  ]
+]

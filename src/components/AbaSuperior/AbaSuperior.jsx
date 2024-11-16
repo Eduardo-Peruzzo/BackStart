@@ -3,7 +3,12 @@ import BarraDePesquisa from "../BarraDePesquisa/BarraDePesquisa";
 import { useState, useEffect, useRef } from "react";
 
 const AbaSuperior = (props) => {
-    const [linguaAtual] = useState(localStorage.getItem("lingua") || "pt");
+    const linguaAtual = localStorage.getItem("lingua")
+
+    const definirLingua = (pt, eng) => {
+        if (linguaAtual === "pt") { return pt }
+        if (linguaAtual === "eng") { return eng }
+    }
 
     const [opcoesFiltro, setOpcoesFiltro] = useState({
         react: false,
@@ -40,10 +45,6 @@ const AbaSuperior = (props) => {
         }));
     };
 
-    const definirLingua = (pt, eng) => {
-        if (linguaAtual === "pt") { return pt }
-        if (linguaAtual === "eng") { return eng }
-    }
 
     const aplicarFiltros = () => props.mudancaFiltro(opcoesFiltro);
 
@@ -219,7 +220,7 @@ const AbaSuperior = (props) => {
                 </DivAreaPesquisa>
 
                 <DivPaginacao id="DivPaginacao">
-                    <TextoPaginacao id="ReferenciaPagina">Página {props.textoPagina}</TextoPaginacao>
+                    <TextoPaginacao id="ReferenciaPagina">{definirLingua("Página", "Page")} {props.textoPagina}</TextoPaginacao>
                 </DivPaginacao>
             </DivAbaSuperior >
         </>
