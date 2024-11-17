@@ -37,6 +37,11 @@ const Top = styled.header`
     border: none;
     height: 2em;
   }
+
+  button {
+    border: none;
+    cursor: pointer;
+  }
 `
 
 
