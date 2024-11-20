@@ -8,6 +8,13 @@ const DetalhesProjeto = (props) => {
         if (linguaAtual === "eng") { return eng }
     }
 
+    const compartilhar = () => {
+        if (document.querySelector("#compartilhar").style.display == "none") {
+            document.querySelector("#compartilhar").style.display = "flex"
+        } else {
+            document.querySelector("#compartilhar").style.display = "none"
+        }
+    }
 
     return (
         <>
@@ -18,7 +25,16 @@ const DetalhesProjeto = (props) => {
             <button id="seta-direita"><img src="imagens/icons/seta-direita-imagem.png"/></button> */}
                 </ImagemPrincipal>
                 <InfoProjeto id="InfoProjeto">
-                    <h1>{props.titulo}</h1>
+                    <div id="titulo">
+                        <h1>{props.titulo}</h1>
+                        <abbr title={definirLingua("Compartilhar projeto", "Share projetct")}><button onClick={compartilhar}><img src="imagens/icons/compartilhar.png" alt="botão compartilhar" /></button></abbr>
+                        <div id="compartilhar" style={{ display: "none" }}>
+                            <img src="imagens/icons/whatsapp.png" alt="compartilhar por whatsapp" />
+                            <img src="imagens/icons/instagram.png" alt="compartilhar por instagram" />
+                            <img src="imagens/icons/gmail.png" alt="compartilhar por gmail" />
+                            <img src="imagens/icons/yahoo.png" alt="compartilhar por yahoo" />
+                        </div>
+                    </div>
                     <h4 id="criadores">{definirLingua("Quem criou o projeto:", "Who created the project:")}</h4>
                     <ul>
                         {props.desenvolvedores.map((dev, index) => (
