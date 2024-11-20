@@ -2,13 +2,26 @@
     {
         "id": "primeiro-computador",
         "titulo": "O Primeiro Computador",
-        "desenvolvedores": ["John Presper Eckert (Enhenheiro)", "John Mauchly (Engenheiro)"],
+        "desenvolvedores": [
+            "John Presper Eckert (Enhenheiro)",
+            "John Mauchly (Engenheiro)"
+        ],
         "dataInicio": "1943",
         "dataFim": "1945",
         "local": "Universidade da Pensilvânia, Filadélfia, EUA",
         "resumo": "O ENIAC (Electronic Numerical Integrator and Computer) foi o primeiro computador eletrônico de uso geral, revolucionando a forma como cálculos eram realizados e marcando o início da era da computação. Originalmente desenvolvido para o Exército dos Estados Unidos durante a Segunda Guerra Mundial, o ENIAC foi projetado para calcular tabelas de artilharia, mas rapidamente se tornou uma peça fundamental na pesquisa científica e industrial.",
-        "especificacoes": ["Dimensões", "Componentes", "Capacidade de processamento", "Programação manual"],
-        "detalhamento": ["Com impressionantes 30 toneladas, o ENIAC ocupava uma sala inteira de aproximadamente 167 metros quadrados, o equivalente a uma pequena casa.", "Equipado com 17.468 válvulas a vácuo, 7.200 diodos de cristal, 1.500 relés, 70 mil resistores e 10 mil capacitores, o ENIAC era uma verdadeira obra de engenharia da época.", "O ENIAC realizava 5.000 operações por segundo, uma velocidade incomparável para os padrões da época. Para fins de comparação, o ENIAC era cerca de mil vezes mais rápido que os sistemas de computação mecânicos da época.", "Diferentemente dos computadores modernos, o ENIAC não possuía uma memória programável. A sua programação era feita manualmente, através da conexão de cabos e ajustes de interruptores. Isso fazia com que a mudança de um programa para outro levasse dias."],
+        "especificacoes": [
+            "Dimensões",
+            "Componentes",
+            "Capacidade de processamento",
+            "Programação manual"
+        ],
+        "detalhamento": [
+            "Com impressionantes 30 toneladas, o ENIAC ocupava uma sala inteira de aproximadamente 167 metros quadrados, o equivalente a uma pequena casa.",
+            "Equipado com 17.468 válvulas a vácuo, 7.200 diodos de cristal, 1.500 relés, 70 mil resistores e 10 mil capacitores, o ENIAC era uma verdadeira obra de engenharia da época.",
+            "O ENIAC realizava 5.000 operações por segundo, uma velocidade incomparável para os padrões da época. Para fins de comparação, o ENIAC era cerca de mil vezes mais rápido que os sistemas de computação mecânicos da época.",
+            "Diferentemente dos computadores modernos, o ENIAC não possuía uma memória programável. A sua programação era feita manualmente, através da conexão de cabos e ajustes de interruptores. Isso fazia com que a mudança de um programa para outro levasse dias."
+        ],
         "topico1": "Desafios",
         "descricao1": "Desenvolver o ENIAC foi um processo inovador, mas extremamente desafiador. O tamanho gigantesco da máquina e o uso massivo de válvulas a vácuo resultavam em frequentes falhas técnicas. O calor gerado pelo equipamento era imenso, exigindo soluções complexas de refrigeração.",
         "topico2": "Inovação e Objetivos",
@@ -23,13 +36,32 @@
     {
         "id": "projeto-exemplo",
         "titulo": "Título do Projeto",
-        "desenvolvedores": ["Dev1", "Dev2", "Dev3", "Dev4", "Dev5", "Dev6"],
+        "desenvolvedores": [
+            "Dev1",
+            "Dev2",
+            "Dev3",
+            "Dev4",
+            "Dev5",
+            "Dev6"
+        ],
         "dataInicio": "DD/MM/AA",
         "dataFim": "DD/MM/AA",
         "local": "IBMEC Barra",
         "resumo": "Resumo placeholder",
-        "especificacoes": ["Especificação 1", "Especificação 2","Especificação 3", "Especificação 4", "Especificação 5"],
-        "detalhamento": ["Detalhamento da especificação 1", "Detalhamento da especificação 2", "Detalhamento da especificação 3", "Detalhamento da especificação 4", "Detalhamento da especificação 5"],
+        "especificacoes": [
+            "Especificação 1",
+            "Especificação 2",
+            "Especificação 3",
+            "Especificação 4",
+            "Especificação 5"
+        ],
+        "detalhamento": [
+            "Detalhamento da especificação 1",
+            "Detalhamento da especificação 2",
+            "Detalhamento da especificação 3",
+            "Detalhamento da especificação 4",
+            "Detalhamento da especificação 5"
+        ],
         "topico1": "Nome do tópico 1",
         "descricao1": "Descrição do tópico 1",
         "topico2": "Nome do tópico 2",
@@ -39,18 +71,40 @@
         "sobrenos": "",
         "arquivos": "https://g1.globo.com",
         "fotoPrincipal": "imagens/old-computer-1.jpg",
-        "fotos": ["imagens/old-computer-2.jpg", "imagens/old-computer-3.jpg", "imagens/old-computer-4.jpg"]
+        "fotos": [
+            "imagens/old-computer-2.jpg",
+            "imagens/old-computer-3.jpg",
+            "imagens/old-computer-4.jpg"
+        ]
     },
     {
         "id": "Optimus",
         "titulo": "Optimus da Tesla",
-        "desenvolvedores": ["Tesla, Inc."],
+        "desenvolvedores": [
+            "Tesla, Inc."
+        ],
         "dataInicio": "2021",
         "dataFim": "Em desenvolvimento",
         "local": "Tesla AI Day, Palo Alto, Califórnia, EUA",
         "resumo": "Optimus é um robô humanoide projetado pela Tesla para realizar tarefas repetitivas e perigosas, educar crianças, com o objetivo de melhorar a eficiência e a segurança em ambientes de trabalho e lazer.",
-        "especificacoes": ["Altura","Peso", "Capacidade de carga","Velocidade máxima","Design"],
-        "detalhamento": ["aproximadamente 1,73 metros","cerca de 57 kg","até 20 kg","8 km/h","design humanoide que facilita a interação em ambientes projetados para humanos.","Equipado com sensores e atuadores avançados para movimento preciso e seguro.","Utiliza a mesma tecnologia de IA dos veículos autônomos da Tesla.","Capacidade de realizar tarefas como carregar objetos, operar ferramentas e realizar movimentações básicas.","Desenvolvido para melhorar a eficiência em linhas de produção e outras aplicações industriais."],
+        "especificacoes": [
+            "Altura",
+            "Peso",
+            "Capacidade de carga",
+            "Velocidade máxima",
+            "Design"
+        ],
+        "detalhamento": [
+            "aproximadamente 1,73 metros",
+            "cerca de 57 kg",
+            "até 20 kg",
+            "8 km/h",
+            "design humanoide que facilita a interação em ambientes projetados para humanos.",
+            "Equipado com sensores e atuadores avançados para movimento preciso e seguro.",
+            "Utiliza a mesma tecnologia de IA dos veículos autônomos da Tesla.",
+            "Capacidade de realizar tarefas como carregar objetos, operar ferramentas e realizar movimentações básicas.",
+            "Desenvolvido para melhorar a eficiência em linhas de produção e outras aplicações industriais."
+        ],
         "topico1": "Tecnologia de Movimento",
         "descricao1": "Optimus utiliza atuadores elétricos para um movimento natural e seguro.",
         "topico2": "Integração de IA",
@@ -60,18 +114,36 @@
         "sobrenos": "",
         "arquivos": "",
         "fotoPrincipal": "imagens/optimus-principal.webp",
-        "fotos": ["imagens/optimus-1.jpg", "imagens/optimus-2.jpg", "imagens/optimus-3.jpg"]
+        "fotos": [
+            "imagens/optimus-1.jpg",
+            "imagens/optimus-2.jpg",
+            "imagens/optimus-3.jpg"
+        ]
     },
     {
         "id": "Metaverso",
         "titulo": "Metaverso da Meta",
-        "desenvolvedores": ["Meta."],
+        "desenvolvedores": [
+            "Meta."
+        ],
         "dataInicio": "2021",
         "dataFim": "Em desenvolvimento",
         "local": "Meta Headquarters, Menlo Park, Califórnia, EUA",
         "resumo": "O Metaverso da Meta (anteriormente Facebook) é uma plataforma de realidade virtual (VR) e aumentada (AR), destinada a criar um ambiente digital interativo e imersivo onde usuários podem interagir, socializar, trabalhar, estudar e até realizar transações. O projeto representa a visão de longo prazo da Meta para o futuro da internet, unindo redes sociais, ambientes de VR/AR, inteligência artificial e blockchain.",
-        "especificacoes": ["Imersão em Realidade Virtual e Realidade Aumentada","Avatares Personalizados e Expressivos", "Ambientes Virtuais Personalizáveis"],
-        "detalhamento": ["A Meta busca criar uma experiência totalmente imersiva, permitindo que os usuários participem do metaverso por meio de dispositivos de realidade virtual como o Meta Quest 2 e o Meta Quest Pro.","A criação de avatares é central ao metaverso da Meta. Os usuários podem criar representações digitais de si mesmos, com opções de personalização detalhadas para refletir suas identidades e estilos.","Usuários e criadores têm liberdade para criar mundos personalizados no metaverso, usando ferramentas de construção intuitivas. Isso permite que qualquer pessoa crie ambientes temáticos, jogos, salas de reunião, eventos virtuais e muito mais.","Equipado com sensores e atuadores avançados para movimento preciso e seguro.","Utiliza a mesma tecnologia de IA dos veículos autônomos da Tesla.","Capacidade de realizar tarefas como carregar objetos, operar ferramentas e realizar movimentações básicas.","Desenvolvido para melhorar a eficiência em linhas de produção e outras aplicações industriais."],
+        "especificacoes": [
+            "Imersão em Realidade Virtual e Realidade Aumentada",
+            "Avatares Personalizados e Expressivos",
+            "Ambientes Virtuais Personalizáveis"
+        ],
+        "detalhamento": [
+            "A Meta busca criar uma experiência totalmente imersiva, permitindo que os usuários participem do metaverso por meio de dispositivos de realidade virtual como o Meta Quest 2 e o Meta Quest Pro.",
+            "A criação de avatares é central ao metaverso da Meta. Os usuários podem criar representações digitais de si mesmos, com opções de personalização detalhadas para refletir suas identidades e estilos.",
+            "Usuários e criadores têm liberdade para criar mundos personalizados no metaverso, usando ferramentas de construção intuitivas. Isso permite que qualquer pessoa crie ambientes temáticos, jogos, salas de reunião, eventos virtuais e muito mais.",
+            "Equipado com sensores e atuadores avançados para movimento preciso e seguro.",
+            "Utiliza a mesma tecnologia de IA dos veículos autônomos da Tesla.",
+            "Capacidade de realizar tarefas como carregar objetos, operar ferramentas e realizar movimentações básicas.",
+            "Desenvolvido para melhorar a eficiência em linhas de produção e outras aplicações industriais."
+        ],
         "topico1": "Tecnologias utilizadas",
         "descricao1": "O Metaverso da Meta é acessado principalmente através de dispositivos como o Meta Quest (anteriormente Oculus Quest), óculos de realidade virtual da empresa. Em 2023, a Meta lançou o Meta Quest Pro, um dispositivo avançado que combina realidade virtual e realidade mista (VR/AR) para criar experiências mais ricas e profissionais.",
         "topico2": "Plataforma Horizon Worlds",
@@ -83,4 +155,4 @@
         "fotoPrincipal": "imagens/Meta-Planets-img-16x9-1-e1635949371546.jpg",
         "fotos": ""
     }
-  ]
+]

@@ -1,4 +1,4 @@
-import { DivPesquisar, BotaoPesquisar, ImgPesquisa } from "../BarraDePesquisa/Style";
+import { DivPesquisar, BotaoPesquisar, ImgPesquisa } from "./Style";
 
 const BarraDePesquisa = (props) => {
     return (

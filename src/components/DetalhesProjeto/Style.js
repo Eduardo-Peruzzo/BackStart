@@ -9,6 +9,45 @@ const AreaInicial = styled.div`
     width: 100%;
     min-height: 25em;
     height: auto;
+    #titulo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.5em;
+        height: 3.5em;
+        background-color: transparent;
+        border: 2px solid var(--primaria);
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    img {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    #compartilhar {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 120%;
+        background: white;
+        border: 1px solid var(--primaria);
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        justify-content: space-evenly;
+        gap: 1em;
+    }
+    #compartilhar > img {
+        cursor: pointer;
+    }
     @media screen and (min-width: 1200px){
         flex-direction: row;
     }

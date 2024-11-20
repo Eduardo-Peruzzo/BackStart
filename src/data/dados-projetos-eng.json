@@ -1,0 +1,319 @@
+[
+    {
+        "id": "primeiro-computador",
+        "filtros": "react",
+        "criadores": [
+            "John Presper Eckert",
+            "John Mauchly"
+        ],
+        "nome": "First Computer",
+        "desc": "First computer ever created, serving as a base for all subsequent technologies.",
+        "foto": "imagens/primeiro-computador.png"
+    },
+    {
+        "id": "projeto-exemplo",
+        "filtros": [
+            "barra",
+            "react"
+        ],
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Example Project Title",
+        "desc": "Brief description of the project used as a generic example.",
+        "foto": "imagens/old-computer-1.jpg"
+    },
+    {
+        "id": "Optimus",
+        "filtros": "git",
+        "criadores": [
+            "Elon Musk",
+            "eduardo"
+        ],
+        "nome": "Optimus",
+        "desc": "Tesla's Optimus is a humanoid robot designed to perform repetitive and potentially dangerous tasks, relieving humans of these activities.",
+        "foto": "imagens/optimus-1.jpg"
+    },
+    {
+        "id": "Metaverso",
+        "filtros": "python",
+        "criadores": [
+            "META",
+            "eduardo"
+        ],
+        "nome": "Metaverse",
+        "desc": "The Metaverse is a collective and shared virtual space, simulating reality through digital devices and technologies such as Virtual Reality (VR) and Augmented Reality (AR).",
+        "foto": "imagens/Meta-Planets-img-16x9-1-e1635949371546.jpg"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "",
+        "filtros": "firebase",
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Project Title",
+        "desc": "Brief project description"
+    },
+    {
+        "id": "primeiro-computador",
+        "filtros": "react",
+        "criadores": [
+            "John Presper Eckert",
+            "John Mauchly"
+        ],
+        "nome": "First Computer",
+        "desc": "First computer ever created, serving as a base for all subsequent technologies.",
+        "foto": "imagens/primeiro-computador.png"
+    },
+    {
+        "id": "projeto-exemplo",
+        "filtros": [
+            "barra",
+            "react"
+        ],
+        "criadores": [
+            "eduardo"
+        ],
+        "nome": "Example Project Title",
+        "desc": "Brief description of the project used as a generic example.",
+        "foto": "imagens/old-computer-1.jpg"
+    },
+    {
+        "id": "Optimus",
+        "filtros": "git",
+        "criadores": [
+            "Elon Musk",
+            "eduardo"
+        ],
+        "nome": "Optimus",
+        "desc": "Tesla's Optimus is a humanoid robot designed to perform repetitive and potentially dangerous tasks, relieving humans of these activities.",
+        "foto": "imagens/optimus-1.jpg"
+    },
+    {
+        "id": "Metaverso",
+        "filtros": "python",
+        "criadores": [
+            "META",
+            "eduardo"
+        ],
+        "nome": "Metaverse",
+        "desc": "The Metaverse is a collective and shared virtual space, simulating reality through digital devices and technologies such as Virtual Reality (VR) and Augmented Reality (AR).",
+        "foto": "imagens/Meta-Planets-img-16x9-1-e1635949371546.jpg"
+    }
+]

@@ -102,7 +102,7 @@ const DivPaginacao = styled.div`
     width: 20%;
     min-width: 5em;
     height: 5em;
-    `
+`
 
 const TextoPaginacao = styled.h3`
     resize: none;

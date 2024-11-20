@@ -1,8 +1,27 @@
-import { Container_paginacao, Paginas } from "./Style";
+import { ContainerPaginacao, Pagina } from "./Style";
 
+const Paginacao = ({ totalProjetos, projetosPorPagina, setpaginaAtual, paginaAtual, alterarPagina}) => {
+    let paginas = [];
 
-const Paginacao = () => (
-    <Container_paginacao> <img src="imagens/icons/seta-esquerda.png"/> <Paginas>1 2 3 4 5 6</Paginas> <img src="imagens/icons/seta-direita.png"/> </Container_paginacao>
-);
+    for (let i = 1; i <= Math.ceil(totalProjetos/projetosPorPagina); i++){
+        paginas.push(i);
+    }
+
+    return(
+        <ContainerPaginacao>
+            {
+                paginas.map((pagina, index) => {
+                    return <Pagina
+                                key={index} 
+                                onClick={() => {setpaginaAtual(pagina), localStorage.setItem('pagina', pagina), alterarPagina(), window.scrollTo({top: 0, behavior: 'smooth'})}}
+                                className={pagina == paginaAtual ? 'paginaAtual' : ''}>
+                                
+                                  {pagina}
+                                </Pagina>
+                })
+            }
+        </ContainerPaginacao>
+    );
+}
 
 export default Paginacao;

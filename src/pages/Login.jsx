@@ -1,7 +1,11 @@
+import Log from "../components/Log/Log";
 import Base from "./Base";
 
+
 const Login = () => (
-    <Base><h1>Login.</h1></Base>
+    <Base>
+        <Log></Log>
+    </Base>
 );
 
 export default Login;

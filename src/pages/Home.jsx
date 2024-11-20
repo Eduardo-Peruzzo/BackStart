@@ -1,17 +1,50 @@
 import Base from "./Base"
 import AbaSuperior from "../components/AbaSuperior/AbaSuperior";
-import ContainerProjetos from "../components/ContainerProjetos/ContainerProjetos"
-import CaixaProjeto from "../components/CaixaProjeto/CaixaProjeto";
 import dadosBrutos from "../data/dados-projetos.json";
+import dadosBrutosEng from "../data/dados-projetos-eng.json";
+import ListaDeProjetos from "../components/ListaDeProjetos/ListaDeProjetos";
 import Paginacao from "../components/Paginacao/Paginacao";
-import ReactPaginate from 'react-paginate';
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const Home = () => {
-  // FILTRAGEM DE DADOS
-  const [dados, setDados] = useState(dadosBrutos);
+  // DEFINIÇÃO DA LÍNGUA USADA
+  const linguaAtual = localStorage.getItem("lingua")
 
-  const filtro = (entrada) => setDados(dadosBrutos.filter(
+  const definirLingua = (pt, eng) => {
+    if (linguaAtual === "pt") { return pt }
+    if (linguaAtual === "eng") { return eng }
+  }
+
+  // FILTRAGEM DE DADOS
+  const [dados, setDados] = useState([]);
+  const [dadosB, setDadosB] = useState([]);
+
+  useEffect(() => {
+    setDados(definirLingua(dadosBrutos, dadosBrutosEng))
+    setDadosB(definirLingua(dadosBrutos, dadosBrutosEng))
+  }, [])
+
+  const { criadores } = useParams();
+
+  const dadosFiltradosURL = dados.filter(
+    (elemento) => {
+      if (typeof (criadores) == "undefined") {
+        return true
+      } else {
+        for (let index = 0; index < elemento.criadores.length; index++) {
+          let nome = elemento.criadores[index];
+
+          if (nome.toLowerCase().includes(criadores.toLowerCase())) {
+            return true
+          }
+        }
+      }
+    }
+  )
+
+  const filtro = (entrada) => setDados(dadosB.filter(
     (elemento) => elemento.nome.toLowerCase().includes(entrada)
   ))
 
@@ -19,7 +52,7 @@ const Home = () => {
 
   const mudarFiltro = (filtros) => setFiltrosAtivos(filtros);
 
-  const dadosFiltrados = dados.filter((projeto) => {
+  const dadosFiltrados = dadosFiltradosURL.filter((projeto) => {
     // Pega as chaves dos filtros ativos e coloca em uma lista
     const filtrosAtivosNomes = Object.keys(filtrosAtivos).filter((chave) => filtrosAtivos[chave]);
 
@@ -27,77 +60,37 @@ const Home = () => {
     return filtrosAtivosNomes.every((filtro) => projeto.filtros.includes(filtro));
   });
 
-  // Exibe os Projetos na Tela com um número pré-definido por página
-  function Projetos({ projetosEmTela }) {
-    return (
-      <>
-        <ContainerProjetos>
-          {projetosEmTela &&
-            projetosEmTela.map((elemento, index) => (
-              <CaixaProjeto
-                key={index}
-                id={elemento.id}
-                nome={elemento.nome}
-                desc={elemento.desc}
-                foto={elemento.foto}
-              />
-            ))}
-        </ContainerProjetos>
-      </>
-    );
-  }
+  // Definições para a paginação
+  const [paginaAtual, setpaginaAtual] = useState(1);
+  const [projetosPorPagina, setProjetosPorPagina] = useState(10);
 
-  // Pagina os itens
-  function ItensPaginados({ itensPorPagina }) {
-    const [itemOffset, setItemOffset] = useState(0);
+  const ultimoProjeto = paginaAtual * projetosPorPagina; // ultimo projeto a aparecer na tela naquela página
+  const primeiroProjeto = ultimoProjeto - projetosPorPagina; // primeiro projeto a aparecer na tela naquela página
+  const projetosEmTela = dadosFiltrados.slice(primeiroProjeto, ultimoProjeto);
 
-    const endOffset = itemOffset + itensPorPagina;
-    const projetosDispostos = dadosFiltrados.slice(itemOffset, endOffset);
-    const numeroPaginas = Math.ceil(dadosFiltrados.length / itensPorPagina);
+  const [textoPagina, settextoPagina] = useState(1);
 
-    const MudarPagina = (event) => {
-      const newOffset = (event.selected * itensPorPagina) % dadosFiltrados.length;
-      setItemOffset(newOffset);
-    };
-
-    return (
-      <>
-        <Projetos projetosEmTela={projetosDispostos} />
-
-        <nav id="react-paginate-container">
-          <ReactPaginate className='react-pag'
-            breakLabel="..."
-            previousLabel="<"
-            nextLabel=">"
-            pageLinkClassName="itensPaginas"
-            previousLinkClassName="anterior"
-            nextLinkClassName="proxima"
-            activeClassName="paginaAtual"
-
-            onPageChange={MudarPagina}
-            pageRangeDisplayed={5}
-            pageCount={numeroPaginas}
-            renderOnZeroPageCount={null}
-            hrefBuilder={(page, pageCount, selected) =>
-              page >= 1 && page <= pageCount ? `/page/${page}` : '#'
-            }>
-          </ReactPaginate>
-        </nav>
-      </>
-    );
-
-
+  const alterarPagina = () => {
+    settextoPagina(localStorage.getItem('pagina'));
   };
 
-  var paginaAtual = 1;
   return (
     <Base>
-      <AbaSuperior numeroPagina={paginaAtual}
-        pesquisa={<input id="InputPesquisa" placeholder="Pesquisar..." type="text" onChange={(evento) => filtro(evento.target.value.toLowerCase())} />}
+      <AbaSuperior
+        pesquisa={<input id="InputPesquisa" placeholder={definirLingua("Pesquisar...", "Search...")} type="text" onChange={(evento) => filtro(evento.target.value.toLowerCase())} />}
         filtro={<img src="imagens/icons/filtro.png" alt="" />}
         mudancaFiltro={mudarFiltro}
+        textoPagina={textoPagina}
       />
-      <ItensPaginados itensPorPagina={12} />
+
+      <ListaDeProjetos dados={projetosEmTela} />
+      <Paginacao
+        totalProjetos={dadosFiltrados.length}
+        projetosPorPagina={projetosPorPagina}
+        setpaginaAtual={setpaginaAtual}
+        paginaAtual={paginaAtual}
+        alterarPagina={alterarPagina}
+      />
     </Base>
   )
 }
