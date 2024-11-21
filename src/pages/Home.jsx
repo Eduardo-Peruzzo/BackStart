@@ -6,7 +6,7 @@ import ListaDeProjetos from "../components/ListaDeProjetos/ListaDeProjetos";
 import Paginacao from "../components/Paginacao/Paginacao";
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 const Home = () => {
   // DEFINIÇÃO DA LÍNGUA USADA
@@ -26,23 +26,22 @@ const Home = () => {
     setDadosB(definirLingua(dadosBrutos, dadosBrutosEng))
   }, [])
 
+  // Configurando parâmetros da URL
   const { criadores } = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const paginaAtual = parseInt(searchParams.get("pagina")) || 1;
 
-  const dadosFiltradosURL = dados.filter(
-    (elemento) => {
-      if (typeof (criadores) == "undefined") {
-        return true
-      } else {
-        for (let index = 0; index < elemento.criadores.length; index++) {
-          let nome = elemento.criadores[index];
 
-          if (nome.toLowerCase().includes(criadores.toLowerCase())) {
-            return true
-          }
-        }
-      }
-    }
-  )
+
+  // Filtros de criadores
+  const dadosFiltradosURL = dados.filter((projeto) => {
+    if (!criadores) {
+      return true
+    }; // Caso nenhum criador seja passado, retorna todos
+    return projeto.criadores.some((nome) =>
+      nome.toLowerCase().includes(criadores.toLowerCase())
+    );
+  });
 
   const filtro = (entrada) => setDados(dadosB.filter(
     (elemento) => elemento.nome.toLowerCase().includes(entrada)
@@ -61,18 +60,37 @@ const Home = () => {
   });
 
   // Definições para a paginação
-  const [paginaAtual, setpaginaAtual] = useState(1);
+  if (sessionStorage.getItem("pagina")) {
+
+  } else {
+    sessionStorage.setItem("pagina", 1)
+  }
+
   const [projetosPorPagina, setProjetosPorPagina] = useState(10);
 
   const ultimoProjeto = paginaAtual * projetosPorPagina; // ultimo projeto a aparecer na tela naquela página
   const primeiroProjeto = ultimoProjeto - projetosPorPagina; // primeiro projeto a aparecer na tela naquela página
   const projetosEmTela = dadosFiltrados.slice(primeiroProjeto, ultimoProjeto);
 
-  const [textoPagina, settextoPagina] = useState(1);
+  const [textoPagina, settextoPagina] = useState(sessionStorage.getItem("pagina"));
 
-  const alterarPagina = () => {
-    settextoPagina(localStorage.getItem('pagina'));
+  const alterarPagina = (pagina) => {
+    settextoPagina(pagina);
+    setSearchParams({ pagina });
   };
+
+  useEffect(() => {
+    const totalPaginas = Math.ceil(dadosFiltrados.length / projetosPorPagina)
+    if (totalPaginas > 1) {
+      setSearchParams({pagina: sessionStorage.getItem("pagina")})
+      settextoPagina(sessionStorage.getItem("pagina"))
+    } else {
+      setSearchParams(1)
+      settextoPagina(1)
+    }
+  }, [dados, criadores, paginaAtual])
+
+
 
   return (
     <Base>
@@ -87,7 +105,6 @@ const Home = () => {
       <Paginacao
         totalProjetos={dadosFiltrados.length}
         projetosPorPagina={projetosPorPagina}
-        setpaginaAtual={setpaginaAtual}
         paginaAtual={paginaAtual}
         alterarPagina={alterarPagina}
       />
