@@ -66,7 +66,7 @@ const Home = () => {
   if (sessionStorage.getItem("pagina")) {
 
   } else {
-    sessionStorage.setItem("pagina", "1")
+    sessionStorage.setItem("pagina", 1)
   }
 
   const [projetosPorPagina, setProjetosPorPagina] = useState(10);
@@ -81,6 +81,8 @@ const Home = () => {
     settextoPagina(pagina);
     setSearchParams({pagina});
   };
+
+  
 
   return (
     <Base>
