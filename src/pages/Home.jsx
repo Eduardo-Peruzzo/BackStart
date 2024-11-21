@@ -61,17 +61,28 @@ const Home = () => {
   });
 
   // Definições para a paginação
-  const [paginaAtual, setpaginaAtual] = useState(1);
+  if (sessionStorage.getItem("pagina")) {
+
+  } else {
+    sessionStorage.setItem("pagina", "1")
+  }
+
+  const params = new URLSearchParams(window.location.search)
+  console.log(params)
+  const pag = parseInt(params.get("pagina"))
+  console.log(pag)
+
+  const [paginaAtual, setpaginaAtual] = useState(sessionStorage.getItem("pagina"));
   const [projetosPorPagina, setProjetosPorPagina] = useState(10);
 
   const ultimoProjeto = paginaAtual * projetosPorPagina; // ultimo projeto a aparecer na tela naquela página
   const primeiroProjeto = ultimoProjeto - projetosPorPagina; // primeiro projeto a aparecer na tela naquela página
   const projetosEmTela = dadosFiltrados.slice(primeiroProjeto, ultimoProjeto);
 
-  const [textoPagina, settextoPagina] = useState(1);
+  const [textoPagina, settextoPagina] = useState(sessionStorage.getItem("pagina"));
 
   const alterarPagina = () => {
-    settextoPagina(localStorage.getItem('pagina'));
+    settextoPagina(sessionStorage.getItem('pagina'));
   };
 
   return (

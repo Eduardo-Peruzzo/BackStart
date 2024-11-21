@@ -12,10 +12,10 @@ const Paginacao = ({ totalProjetos, projetosPorPagina, setpaginaAtual, paginaAtu
             {
                 paginas.map((pagina, index) => {
                     return <Pagina
-                                key={index} 
-                                onClick={() => {setpaginaAtual(pagina), localStorage.setItem('pagina', pagina), alterarPagina(), window.scrollTo({top: 0, behavior: 'smooth'})}}
+                                key={index}
+                                onClick={() => {setpaginaAtual(pagina), sessionStorage.setItem('pagina', pagina), alterarPagina(), window.scrollTo({top: 0, behavior: 'smooth'})}}
                                 className={pagina == paginaAtual ? 'paginaAtual' : ''}>
-                                
+
                                   {pagina}
                                 </Pagina>
                 })
