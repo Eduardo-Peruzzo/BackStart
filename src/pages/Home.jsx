@@ -6,6 +6,7 @@ import Paginacao from "../components/Paginacao/Paginacao";
 
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
   // FILTRAGEM DE DADOS
@@ -51,7 +52,7 @@ const Home = () => {
 
   const ultimoProjeto = paginaAtual * projetosPorPagina; // ultimo projeto a aparecer na tela naquela página
   const primeiroProjeto = ultimoProjeto - projetosPorPagina; // primeiro projeto a aparecer na tela naquela página
-  const projetosEmTela = dadosFiltrados.slice(primeiroProjeto, ultimoProjeto);
+  const projetosEmTela = dadosFiltrados.slice(primeiroProjeto, ultimoProjeto); // Projetos que aparecem por página
 
   const [textoPagina, settextoPagina] = useState(1);
 

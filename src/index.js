@@ -1,7 +1,6 @@
 
 import React from "react";
 import { createRoot } from "react-dom/client";
-
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 import { auth } from "./config/Firebase";
@@ -10,6 +9,7 @@ import Home from "./pages/Home";
 import ProjetoDetalhes from "./pages/ProjetoDetalhes";
 import Login from "./pages/Login";
 import SobreNos from "./pages/SobreNos";
+import ParametrosPesquisa from "./components/ParametrosPesquisa/ParametrosPesquisa";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -28,9 +28,9 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/:criadores" element={<Home/>} />
+        <Route path="/search" element={<ParametrosPesquisa/>}/>
         <Route path="/projeto/" element={<ProjetoDetalhes/>} />
         <Route path="/projeto/:id" element={<ProjetoDetalhes/>} />
-        <Route path="/pagina/:paginaAtual" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/sobre-nos" element={<SobreNos/>} />
       </Routes>
