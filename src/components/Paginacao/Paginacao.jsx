@@ -6,15 +6,12 @@ const Paginacao = ({ totalProjetos, projetosPorPagina, paginaAtual, alterarPagin
     const proxima_pagina = useState(parseInt(sessionStorage.getItem("pagina")) + 1);
     const pagina_anterior = useState(parseInt(sessionStorage.getItem("pagina")) - 1);
 
-    console.log(proxima_pagina);
-    console.log(pagina_anterior);
-
     const paginaSeguinte = () => {
         if (proxima_pagina <= totalPaginas){
             alterarPagina(proxima_pagina);
         }
     }
-    
+
     const paginaAnterior = () => {
         if (pagina_anterior > 0){
             alterarPagina(pagina_anterior);

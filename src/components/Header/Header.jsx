@@ -26,10 +26,9 @@ const Header = () => {
     window.location.reload()
   }
 
-  // const resetarPagina = () => {
-  //   sessionStorage.setItem("pagina", "1")
-  //   window.location.reload()
-  // }
+  const resetarPagina = () => {
+    sessionStorage.setItem("pagina", "1")
+  }
 
   return (
     <>
@@ -37,7 +36,7 @@ const Header = () => {
         <Link to="https://www.ibmec.br"><img src="imagens/logo-ibmec.png" alt="logo ibmec" /></Link>
         <div>
           {localStorage.getItem("adm") && (<button className="botao" onClick={logout}>logout</button>)}
-          <Link to="/" className="botao">Home</Link>
+          <Link to="/" className="botao" onClick={resetarPagina}>Home</Link>
           <select name="linguagem" id="botao-lingua" className="botao" onChange={mudarSelect} value={selecionarLingua}>
             <option value="pt">PT-BR</option>
             <option value="eng">ENG</option>

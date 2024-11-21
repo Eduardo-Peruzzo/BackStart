@@ -20,21 +20,18 @@ const Home = () => {
   // FILTRAGEM DE DADOS
   const [dados, setDados] = useState([]);
   const [dadosB, setDadosB] = useState([]);
-  
+
   useEffect(() => {
     setDados(definirLingua(dadosBrutos, dadosBrutosEng))
     setDadosB(definirLingua(dadosBrutos, dadosBrutosEng))
   }, [])
 
-   // Configurando parâmetros da URL
-   const { criadores } = useParams();
-   const [searchParams, setSearchParams] = useSearchParams();
-   const paginaAtual = parseInt(searchParams.get("pagina")) || 1;
+  // Configurando parâmetros da URL
+  const { criadores } = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const paginaAtual = parseInt(searchParams.get("pagina")) || 1;
 
-   useEffect( () => {
-    setSearchParams(1)
-    settextoPagina(1)
-  }, [criadores])
+
 
   // Filtros de criadores
   const dadosFiltradosURL = dados.filter((projeto) => {
@@ -79,10 +76,21 @@ const Home = () => {
 
   const alterarPagina = (pagina) => {
     settextoPagina(pagina);
-    setSearchParams({pagina});
+    setSearchParams({ pagina });
   };
 
-  
+  useEffect(() => {
+    const totalPaginas = Math.ceil(dadosFiltrados.length / projetosPorPagina)
+    if (totalPaginas > 1) {
+      setSearchParams({pagina: sessionStorage.getItem("pagina")})
+      settextoPagina(sessionStorage.getItem("pagina"))
+    } else {
+      setSearchParams(1)
+      settextoPagina(1)
+    }
+  }, [dados, criadores, paginaAtual])
+
+
 
   return (
     <Base>

@@ -7,7 +7,7 @@ const ContainerPaginacao = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
   .paginaAtual{
     background-color: var(--secundaria);
     font-weight: 400;
@@ -16,7 +16,7 @@ const ContainerPaginacao = styled.div`
       background-color: var(--secundaria);
     }
   }
-  
+
   .anterior, .proxima{
     background-color: #c6c6c6;
     padding: 5px 10px;
@@ -37,6 +37,7 @@ const Pagina = styled.button`
     padding: 10px 15px;
     border: 1px solid #d6d6d6;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 `
 
 const PaginaAnterior = styled.button`
