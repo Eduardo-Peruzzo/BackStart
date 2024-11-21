@@ -6,7 +6,7 @@ import ListaDeProjetos from "../components/ListaDeProjetos/ListaDeProjetos";
 import Paginacao from "../components/Paginacao/Paginacao";
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 const Home = () => {
   // DEFINIÇÃO DA LÍNGUA USADA
@@ -20,29 +20,31 @@ const Home = () => {
   // FILTRAGEM DE DADOS
   const [dados, setDados] = useState([]);
   const [dadosB, setDadosB] = useState([]);
-
+  
   useEffect(() => {
     setDados(definirLingua(dadosBrutos, dadosBrutosEng))
     setDadosB(definirLingua(dadosBrutos, dadosBrutosEng))
   }, [])
 
-  const { criadores } = useParams();
+   // Configurando parâmetros da URL
+   const { criadores } = useParams();
+   const [searchParams, setSearchParams] = useSearchParams();
+   const paginaAtual = parseInt(searchParams.get("pagina")) || 1;
 
-  const dadosFiltradosURL = dados.filter(
-    (elemento) => {
-      if (typeof (criadores) == "undefined") {
-        return true
-      } else {
-        for (let index = 0; index < elemento.criadores.length; index++) {
-          let nome = elemento.criadores[index];
+   useEffect( () => {
+    setSearchParams(1)
+    settextoPagina(1)
+  }, [criadores])
 
-          if (nome.toLowerCase().includes(criadores.toLowerCase())) {
-            return true
-          }
-        }
-      }
-    }
-  )
+  // Filtros de criadores
+  const dadosFiltradosURL = dados.filter((projeto) => {
+    if (!criadores) {
+      return true
+    }; // Caso nenhum criador seja passado, retorna todos
+    return projeto.criadores.some((nome) =>
+      nome.toLowerCase().includes(criadores.toLowerCase())
+    );
+  });
 
   const filtro = (entrada) => setDados(dadosB.filter(
     (elemento) => elemento.nome.toLowerCase().includes(entrada)
@@ -67,12 +69,6 @@ const Home = () => {
     sessionStorage.setItem("pagina", "1")
   }
 
-  const params = new URLSearchParams(window.location.search)
-  console.log(params)
-  const pag = parseInt(params.get("pagina"))
-  console.log(pag)
-
-  const [paginaAtual, setpaginaAtual] = useState(sessionStorage.getItem("pagina"));
   const [projetosPorPagina, setProjetosPorPagina] = useState(10);
 
   const ultimoProjeto = paginaAtual * projetosPorPagina; // ultimo projeto a aparecer na tela naquela página
@@ -81,8 +77,9 @@ const Home = () => {
 
   const [textoPagina, settextoPagina] = useState(sessionStorage.getItem("pagina"));
 
-  const alterarPagina = () => {
-    settextoPagina(sessionStorage.getItem('pagina'));
+  const alterarPagina = (pagina) => {
+    settextoPagina(pagina);
+    setSearchParams({pagina});
   };
 
   return (
@@ -98,7 +95,6 @@ const Home = () => {
       <Paginacao
         totalProjetos={dadosFiltrados.length}
         projetosPorPagina={projetosPorPagina}
-        setpaginaAtual={setpaginaAtual}
         paginaAtual={paginaAtual}
         alterarPagina={alterarPagina}
       />

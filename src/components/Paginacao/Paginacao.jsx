@@ -1,6 +1,6 @@
 import { ContainerPaginacao, Pagina } from "./Style";
 
-const Paginacao = ({ totalProjetos, projetosPorPagina, setpaginaAtual, paginaAtual, alterarPagina}) => {
+const Paginacao = ({ totalProjetos, projetosPorPagina, paginaAtual, alterarPagina}) => {
     let paginas = [];
 
     for (let i = 1; i <= Math.ceil(totalProjetos/projetosPorPagina); i++){
@@ -13,7 +13,7 @@ const Paginacao = ({ totalProjetos, projetosPorPagina, setpaginaAtual, paginaAtu
                 paginas.map((pagina, index) => {
                     return <Pagina
                                 key={index}
-                                onClick={() => {setpaginaAtual(pagina), sessionStorage.setItem('pagina', pagina), alterarPagina(), window.scrollTo({top: 0, behavior: 'smooth'})}}
+                                onClick={() => {sessionStorage.setItem('pagina', pagina), alterarPagina(pagina), window.scrollTo({top: 0, behavior: 'smooth'})}}
                                 className={pagina == paginaAtual ? 'paginaAtual' : ''}>
 
                                   {pagina}
